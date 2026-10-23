@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>记一顿｜今天吃什么</title><link rel="stylesheet" href="assets/journal.css"></head><body>
+<div class="phone"><svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9M9 21v-7h6v7"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13h6l-1 9 9-12h-6l1-8Z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h4l2-3h5l2 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21c.7-4.2 3.4-6.5 8-6.5s7.3 2.3 8 6.5"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"/></symbol>
+</svg>
+<main class="page" id="pageScroll">
+  <header class="page-head"><h1>记一顿</h1><p>写下刚刚吃过的内容。</p></header>
+  <form id="mealForm" class="composer">
+    <label class="section-title" for="mealText">这一餐吃了什么？</label>
+    <textarea id="mealText" maxlength="1200" placeholder="例如：10/22 午餐——毛血旺、米饭、红茶" required></textarea>
+    <div id="photoPreview" class="photo-preview" hidden><img id="photoThumb" alt="所选餐食照片"><span id="photoName"></span><button id="removePhoto" type="button">移除</button></div>
+    <input id="photoInput" type="file" accept="image/*" capture="environment" hidden>
+    <div class="composer-actions">
+      <span id="inputStatus" class="input-status voice-status" role="status" aria-live="polite"></span>
+      <button id="photoButton" class="icon-button" type="button" aria-label="添加餐食照片" title="添加照片"><svg><use href="#i-camera"/></svg></button>
+      <button id="voiceButton" class="icon-button" type="button" aria-label="语音输入" title="语音输入"><svg><use href="#i-mic"/></svg></button>
+      <button id="saveMealButton" class="btn btn-primary" type="submit">记录</button>
+    </div>
+  </form>
+  <section aria-labelledby="recentTitle">
+    <div class="section-row"><h2 id="recentTitle" class="section-title">最近饮食</h2><span id="recordCount" class="small-note"></span></div>
+    <p id="sampleNotice" class="sample-note" hidden></p>
+    <div id="mealHistory" class="record-list"></div>
+    <button id="historyToggle" class="history-toggle" type="button" aria-expanded="false" hidden><span>展开全部</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+  </section>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</main>
+<nav class="nav" aria-label="主要导航">
+  <a class="tab" href="page0_home_old_user.html"><span class="ic"><svg><use href="#i-home"/></svg></span>首页</a>
+  <a class="tab" href="page2_ask.html"><span class="ic"><svg><use href="#i-bolt"/></svg></span>问一问</a>
+  <a class="tab on" href="page4_log.html" aria-current="page"><span class="ic"><svg><use href="#i-camera"/></svg></span>记一顿</a>
+  <a class="tab" href="page5_profile.html"><span class="ic"><svg><use href="#i-user"/></svg></span>我的</a>
+</nav></div>
+<script src="assets/data/meal-seed-v3.js"></script><script type="module" src="assets/log.js"></script></body></html>

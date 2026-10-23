@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>我的｜今天吃什么</title><link rel="stylesheet" href="assets/journal.css"></head><body>
+<div class="phone"><svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9M9 21v-7h6v7"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13h6l-1 9 9-12h-6l1-8Z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h4l2-3h5l2 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21c.7-4.2 3.4-6.5 8-6.5s7.3 2.3 8 6.5"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.2"/><circle cx="12" cy="12" r="2.7"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.28 5.28l1.63 1.63m10.18 10.18 1.63 1.63m0-13.44-1.63 1.63M6.91 17.09l-1.63 1.63"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"/></symbol>
+</svg>
+<main class="page" id="pageScroll">
+  <header class="page-head profile-head"><div><h1>我的</h1><p id="profileGreeting">从每一餐看见自己的饮食习惯。</p></div><a id="settingsButton" class="settings-button" href="page6_settings.html" aria-label="打开设置" title="设置"><svg><use href="#i-settings"/></svg></a></header>
+
+  <section class="profile-hero" aria-labelledby="profileTitle">
+    <h2 id="profileTitle" class="profile-hero-label">饮食档案</h2>
+    <div class="profile-hero-number" id="mealTotal">0</div>
+    <div class="profile-hero-caption">已记录餐数</div>
+    <p id="sampleNotice" class="sample-note on-purple" hidden></p>
+    <div class="metric-grid">
+      <div class="metric-cell meal-time-cell"><span>常见用餐时间</span><div id="mealTimeRanges" class="meal-time-ranges"></div></div>
+      <div class="metric-cell"><span>记录过的菜品</span><strong id="foodKinds">0 种</strong></div>
+    </div>
+  </section>
+  <section class="card" aria-labelledby="foodTitle">
+    <h2 id="foodTitle" class="section-title">常吃食物</h2>
+    <div id="foodChart" class="chart-list"></div>
+  </section>
+  <section class="card" aria-labelledby="tasteTitle">
+    <div class="taste-heading"><h2 id="tasteTitle" class="section-title">口味画像</h2><span id="tasteCount" class="taste-count"></span></div>
+    <div id="tasteChart" class="taste-chart"></div>
+  </section>
+  <div class="profile-footer"><button id="clearLogs" class="btn-text" type="button">清空饮食记录</button></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</main>
+<nav class="nav" aria-label="主要导航">
+  <a class="tab" href="page0_home_old_user.html"><span class="ic"><svg><use href="#i-home"/></svg></span>首页</a>
+  <a class="tab" href="page2_ask.html"><span class="ic"><svg><use href="#i-bolt"/></svg></span>问一问</a>
+  <a class="tab" href="page4_log.html"><span class="ic"><svg><use href="#i-camera"/></svg></span>记一顿</a>
+  <a class="tab on" href="page5_profile.html" aria-current="page"><span class="ic"><svg><use href="#i-user"/></svg></span>我的</a>
+</nav></div>
+<script src="assets/data/meal-seed-v3.js"></script><script type="module" src="assets/profile.js"></script></body></html>

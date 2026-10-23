@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="data:,">
+  <title>今天吃什么</title>
+  <script>
+    (() => {
+      let target = 'page1_guide.html';
+      try {
+        const profile = JSON.parse(localStorage.getItem('user_profile') || 'null');
+        if (profile && typeof profile === 'object' && !Array.isArray(profile)) target = 'page0_home_old_user.html';
+      } catch { /* A missing or invalid profile starts the guide. */ }
+      location.replace(target + location.search + location.hash);
+    })();
+  </script>
+</head>
+<body><a href="page1_guide.html">开始首次引导</a></body>
+</html>
