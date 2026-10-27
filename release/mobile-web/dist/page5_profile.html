@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>我的｜今天吃什么</title><link rel="stylesheet" href="assets/journal.css?v=3.0.0"><link rel="stylesheet" href="assets/account.css?v=3.0.0"><script>if(location.protocol==='file:')location.replace('http://127.0.0.1:5173/'+location.pathname.split('/').pop()+location.search+location.hash)</script></head><body>
+<div class="phone"><svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9M9 21v-7h6v7"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13h6l-1 9 9-12h-6l1-8Z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h4l2-3h5l2 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21c.7-4.2 3.4-6.5 8-6.5s7.3 2.3 8 6.5"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19.43 12.98c.04-.32.07-.65.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65A.488.488 0 0 0 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.66-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.58 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65Z"/><circle cx="12" cy="12" r="3"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"/></symbol>
+</svg>
+<main class="page" id="pageScroll">
+  <header class="page-head profile-head"><div><h1>我的</h1><p id="profileGreeting">从每一顿看见自己的饮食习惯</p></div><a id="settingsButton" class="settings-button" href="page6_settings.html" aria-label="打开设置" title="设置"><svg><use href="#i-settings"/></svg></a></header>
+
+  <section class="profile-hero" aria-labelledby="profileTitle">
+    <div class="profile-hero-head"><h2 id="profileTitle" class="profile-hero-label">饮食档案</h2><span class="profile-period">累计</span></div>
+    <div class="profile-featured">
+      <div><p class="profile-featured-label">吃过的菜品种类</p><p class="profile-featured-value"><strong id="foodKinds">0</strong><span>种</span></p></div>
+      <svg class="profile-plate" viewBox="0 0 40 32" fill="none" stroke-width="2.133" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="21" cy="16" r="8.5"/><path d="M3 4v6a3 3 0 0 0 6 0V4M6 4v23M37 4c-3.5 0-4 4-4 9h4M37 4v23"/></svg>
+    </div>
+    <dl class="profile-totals">
+      <div><dt>记录餐数</dt><dd><strong id="mealTotal">0</strong><span>餐</span></dd></div>
+      <div><dt>记录天数</dt><dd><strong id="recordDays">0</strong><span>天</span></dd></div>
+    </dl>
+  </section>
+  <section class="card" aria-labelledby="foodTitle">
+    <h2 id="foodTitle" class="section-title">常吃食物 Top 3</h2>
+    <div id="foodChart" class="chart-list"></div>
+  </section>
+  <section class="card" aria-labelledby="tasteTitle">
+    <div class="taste-heading"><h2 id="tasteTitle" class="section-title">口味画像</h2><span id="tasteCount" class="taste-count"></span></div>
+    <div id="tasteChart" class="taste-chart"></div>
+  </section>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</main>
+<nav class="nav" aria-label="主要导航">
+  <a class="tab" href="page0_home_old_user.html"><span class="ic"><svg><use href="#i-home"/></svg></span>首页</a>
+  <a class="tab" href="page2_ask.html"><span class="ic"><svg><use href="#i-bolt"/></svg></span>问一问</a>
+  <a class="tab" href="page4_log.html"><span class="ic"><svg><use href="#i-camera"/></svg></span>记一顿</a>
+  <a class="tab on" href="page5_profile.html" aria-current="page"><span class="ic"><svg><use href="#i-user"/></svg></span>我的</a>
+</nav></div>
+<script src="assets/data/meal-seed-v3.js"></script><script type="module" src="assets/bootstrap.js?v=3.0.0" data-page-module="./profile.js?v=3.0.0"></script></body></html>

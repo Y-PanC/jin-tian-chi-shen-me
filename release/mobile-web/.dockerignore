@@ -1,0 +1,10 @@
+.git
+.venv
+.env
+.data
+.openai
+__pycache__
+.pytest_cache
+*.pyc
+tests
+backend/tests

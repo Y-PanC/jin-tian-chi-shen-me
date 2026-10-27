@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F6F4FA">
+  <link rel="icon" href="data:,">
+  <title>推荐依据 · 今天吃什么</title>
+  <link rel="stylesheet" href="assets/app.css?v=3.0.0">
+  <link rel="stylesheet" href="assets/account.css?v=3.0.0">
+  <script src="assets/preferences.js?v=3.0.0" defer></script>
+  <script type="module" src="assets/bootstrap.js?v=3.0.0" data-page-module="./result-evidence.js?v=3.0.0"></script>
+  <script>if(location.protocol==='file:')location.replace('http://127.0.0.1:5173/'+location.pathname.split('/').pop()+location.search+location.hash)</script>
+</head>
+<body>
+  <div class="phone">
+    <main class="page evidence-page" id="main-content">
+      <header class="top result-top">
+        <a class="result-back" href="page3_result.html" data-return-results aria-label="返回推荐结果"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m14 6-6 6 6 6"/></svg></a>
+        <h1 class="evidence-title">推荐依据</h1>
+      </header>
+      <div class="stack" id="evidence-content" hidden></div>
+      <section class="card empty" id="evidence-unavailable" hidden>
+        <h2>这份推荐已更新</h2>
+        <p class="hint">请返回推荐页，查看当前菜品的推荐依据</p>
+        <a class="btn btn-primary" href="page3_result.html" data-return-results>返回推荐结果 →</a>
+      </section>
+      <a class="btn btn-secondary btn-wide section" id="evidence-return" href="page3_result.html" data-return-results hidden>返回推荐结果</a>
+    </main>
+  </div>
+</body>
+</html>

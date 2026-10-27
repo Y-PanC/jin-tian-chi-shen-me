@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="assets/app.css">
+  <title>重新开始 · 今天吃什么</title>
+<link rel="stylesheet" href="assets/account.css?v=3.0.0"><script>if(location.protocol==='file:')location.replace('http://127.0.0.1:5173/'+location.pathname.split('/').pop()+location.search+location.hash)</script></head>
+<body>
+  <div class="phone">
+    <main class="page">
+      <div class="top"><div class="brand">今天<span>吃什么</span></div></div>
+      <section class="card stack">
+        <h1>重新开始新手引导</h1>
+        <p class="hint">重置饮食偏好和本次选择，从第一步开始；饮食记录和个人信息会保留</p>
+        <button id="restart" class="btn btn-primary" type="button">从新手引导开始</button>
+        <button id="restore" class="btn btn-secondary" type="button" hidden>恢复上一次偏好</button>
+        <a class="btn btn-secondary" href="index.html">返回应用</a>
+        <p id="message" class="hint" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+  </div>
+<script type="module" src="assets/bootstrap.js?v=3.0.0" data-page-module="./restart.js?v=3.0.0"></script>
+</body>
+</html>

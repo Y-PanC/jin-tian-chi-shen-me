@@ -1,0 +1,10 @@
+{
+  "name": "今天吃什么",
+  "version": "3.0.0",
+  "status": "released",
+  "baseVersion": "2.0.0",
+  "developmentStarted": "2026-10-25",
+  "edition": "mobile-web-local",
+  "releaseDate": "2026-10-26",
+  "gitTag": "v3.0.0"
+}
