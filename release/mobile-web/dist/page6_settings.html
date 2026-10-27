@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>基本设置｜今天吃什么</title><link rel="stylesheet" href="assets/journal.css?v=2.0.0"><link rel="stylesheet" href="assets/account.css?v=2.0.0"><script>if(location.protocol==='file:')location.replace('http://127.0.0.1:5173/'+location.pathname.split('/').pop()+location.search+location.hash)</script></head><body>
+<div class="phone"><svg style="display:none" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <symbol id="i-home" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 10 9-7 9 7"/><path d="M5 9v12h14V9M9 21v-7h6v7"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 5 13h6l-1 9 9-12h-6l1-8Z"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h4l2-3h5l2 3h3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"/><circle cx="12" cy="13" r="4"/></symbol>
+  <symbol id="i-user" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="7" r="4"/><path d="M4 21c.7-4.2 3.4-6.5 8-6.5s7.3 2.3 8 6.5"/></symbol>
+  <symbol id="i-settings" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.2"/><circle cx="12" cy="12" r="2.7"/><path d="M12 2.5v2.3M12 19.2v2.3M2.5 12h2.3M19.2 12h2.3M5.28 5.28l1.63 1.63m10.18 10.18 1.63 1.63m0-13.44-1.63 1.63M6.91 17.09l-1.63 1.63"/></symbol>
+  <symbol id="i-mic" viewBox="0 0 24 24" fill="none" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3m-4 0h8"/></symbol>
+</svg>
+<main class="page" id="pageScroll">
+  <header class="settings-page-head"><a class="back-link" href="page5_profile.html" aria-label="返回我的">‹</a><h1>基本设置</h1></header>
+  <p id="accountName" class="account-name"></p><p class="settings-page-copy">管理个人信息和记录输入偏好</p>
+  <section class="card">
+    <h2 class="section-title">个人信息</h2>
+    <div class="settings-field"><label class="settings-label" for="nicknameInput">昵称</label><input id="nicknameInput" class="settings-input" maxlength="24" placeholder="选填"></div><div class="settings-field"><label class="settings-label" for="userIdInput">ID</label><input id="userIdInput" class="settings-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" maxlength="32" placeholder="选填，用于个人信息展示"></div>
+  </section>
+  <section class="card">
+    <div class="section-row"><h2 class="section-title">饮食偏好</h2><a class="btn-text" href="page1_guide.html?return=profile">修改偏好 ›</a></div><p class="settings-note">调整长期目标、口味、忌口、辣度、预算和饭量</p>
+  </section>
+  <section class="card">
+    <h2 class="section-title">输入方式</h2>
+    <label class="permission-row"><span><strong>照片选择</strong><small>在餐食详情中添加照片，照片随饮食记录保存到当前账号</small></span><input id="photoPermissionToggle" type="checkbox"></label>
+    <label class="permission-row"><span><strong>语音输入提示</strong><small>点击麦克风图标后，可使用设备键盘／系统听写；网页不申请麦克风权限</small></span><input id="voicePermissionToggle" type="checkbox"></label>
+    <p class="settings-note">系统相机或麦克风权限（如设备需要）由浏览器／操作系统在你主动使用时处理，本页面不会静默开启</p>
+  </section>
+  <section class="card"><h2 class="section-title">本机记录</h2><p id="localRecordCount" class="settings-note"></p><button id="importLocal" class="btn btn-secondary" type="button">导入本机记录</button><p id="importStatus" class="import-status" role="status" aria-live="polite"></p></section>
+  <div class="inline-actions"><button id="saveSettings" class="btn btn-primary" type="button">保存设置</button></div><div class="logout-area"><button id="logoutButton" class="btn btn-danger full" type="button">退出登录</button><p class="settings-note">退出后，饮食记录和偏好仍保存在账号中</p></div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</main>
+<nav class="nav" aria-label="主要导航">
+  <a class="tab" href="page0_home_old_user.html"><span class="ic"><svg><use href="#i-home"/></svg></span>首页</a>
+  <a class="tab" href="page2_ask.html"><span class="ic"><svg><use href="#i-bolt"/></svg></span>问一问</a>
+  <a class="tab" href="page4_log.html"><span class="ic"><svg><use href="#i-camera"/></svg></span>记一顿</a>
+  <a class="tab on" href="page5_profile.html"><span class="ic"><svg><use href="#i-user"/></svg></span>我的</a>
+</nav></div>
+<script type="module" src="assets/bootstrap.js?v=2.0.0" data-page-module="./settings.js?v=2.0.0"></script></body></html>

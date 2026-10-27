@@ -1,0 +1,393 @@
+{
+  "name": "今天吃什么",
+  "version": "2.0.0",
+  "status": "released",
+  "releaseDate": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "gitTag": "v2.0.0",
+  "sourceCommit": "60e2d2c431270a4f9d6beb71c2cd1d0e3046a803",
+  "previewUrl": "http://127.0.0.1:5175/",
+  "developmentUrl": "http://127.0.0.1:5173/",
+  "entrypoint": "mobile-web/dist/index.html",
+  "edition": "mobile-web-full-stack-local",
+  "testResults": {
+    "frontend": 38,
+    "backend": 25,
+    "status": "passed"
+  },
+  "excluded": [
+    ".env",
+    ".data/",
+    ".venv/",
+    ".git/",
+    ".openai/",
+    "__pycache__/",
+    ".pytest_cache/"
+  ],
+  "files": {
+    "AGENTS.md": {
+      "bytes": 2118,
+      "sha256": "123c643025a5815d2ad63920b270b42241e4f429252607572038d21bfa9179f8"
+    },
+    "SOURCE_COMMIT.txt": {
+      "bytes": 41,
+      "sha256": "d69b10a49eaa3602adfdf9677d8a9a26c1d6a807850af4deaedc328ad2eb7c26"
+    },
+    "mobile-web/.dockerignore": {
+      "bytes": 82,
+      "sha256": "a367359d4c7989b3d13dc592b57ef8f349f97b8f9c035e4b3ce90396c97f92ab"
+    },
+    "mobile-web/.env.example": {
+      "bytes": 423,
+      "sha256": "9d3963140f5c3057cbd6b6227204018798abf711259e775613f9e20b773b1bc1"
+    },
+    "mobile-web/.gitignore": {
+      "bytes": 63,
+      "sha256": "0ba519df32f65eeb3ccb28e3753fffe12af36c3ab928696e0418afeccdf46a22"
+    },
+    "mobile-web/Dockerfile": {
+      "bytes": 502,
+      "sha256": "a76641df48889027d5ea0412eeac59e220833f91433914aab1ec8f1239c8f3eb"
+    },
+    "mobile-web/README.md": {
+      "bytes": 3669,
+      "sha256": "07541158b65cd070e533e13005aef353e390337103bb0e403eec70b63bd37af7"
+    },
+    "mobile-web/VERSION": {
+      "bytes": 6,
+      "sha256": "c28fcca53637bc88e124af1725df13cb98c69dedefd62fb3cdbe1cdb6b760624"
+    },
+    "mobile-web/backend/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "mobile-web/backend/alembic.ini": {
+      "bytes": 115,
+      "sha256": "f159b6ef01f795d5faa4a98d9117c31f22f80314fdf35ac9a5e5d04424ca284c"
+    },
+    "mobile-web/backend/app.py": {
+      "bytes": 24555,
+      "sha256": "eba95120537727bd56eab885089b817b309f434c892758eb18463ce4bbe56716"
+    },
+    "mobile-web/backend/check_model.py": {
+      "bytes": 1117,
+      "sha256": "5af1d7d60948fff3cb48653549b6bf10fa6022b780424dbeca98ff745a8a4868"
+    },
+    "mobile-web/backend/config.py": {
+      "bytes": 1794,
+      "sha256": "9a3a74ad40b8939a7a6f5b29690ad4ea13b7a9c9c5c1270455e2067c5abf9533"
+    },
+    "mobile-web/backend/domain.py": {
+      "bytes": 6664,
+      "sha256": "dfabc56072a0662f5fd743b0035972ca51b7582f77f4a50a96f4fa3841b6970e"
+    },
+    "mobile-web/backend/maintenance.py": {
+      "bytes": 1506,
+      "sha256": "18ac56e3a2e935dfacb35a8f4dfc6f6fca08f455ef5409f76181f70d177491bb"
+    },
+    "mobile-web/backend/migrations/env.py": {
+      "bytes": 975,
+      "sha256": "9953401c065a8ea23e2ae8554d3f2516a55e33ec7dad0a690ce3b983f611841b"
+    },
+    "mobile-web/backend/migrations/script.py.mako": {
+      "bytes": 355,
+      "sha256": "ee5dd9a388ee59fd3d089670c2f60db5f5904da6f21cfe3bfc44d7f567ee1546"
+    },
+    "mobile-web/backend/migrations/versions/656070957178_initial_web_backend.py": {
+      "bytes": 5371,
+      "sha256": "f98ca0b44beb0eccf5a36ecd4031a068cd21eec24be81726e752976c64a91a58"
+    },
+    "mobile-web/backend/models.py": {
+      "bytes": 3762,
+      "sha256": "c2270c9e32d95d13d39b33befcf23fd7c6215e292f963c02a1cc665827383dc9"
+    },
+    "mobile-web/backend/requirements.lock": {
+      "bytes": 637,
+      "sha256": "1a083152866d462dffcbb6cff05f99d6ed85487294fdb1f3d0b41adaa7353f9b"
+    },
+    "mobile-web/backend/requirements.txt": {
+      "bytes": 218,
+      "sha256": "89181a15c8a0596051b765437495baea33a8dfdd2bfe4848c0c28c1a739f8d1e"
+    },
+    "mobile-web/backend/run.py": {
+      "bytes": 1525,
+      "sha256": "562e1101c8d7950f3d98a489aeadb1a99fde09165f50868d4da4256e2ffb6f6c"
+    },
+    "mobile-web/backend/security.py": {
+      "bytes": 723,
+      "sha256": "b931a5d75f1ddb251690fccbc45056f3a27b8a631784a41b9df11883c84e41d5"
+    },
+    "mobile-web/backend/tests/test_api.py": {
+      "bytes": 15279,
+      "sha256": "72cc8a41be81ae7e0f47e5b6905827a28086cee719882e35a3fd40244f446670"
+    },
+    "mobile-web/backend/vision.py": {
+      "bytes": 6494,
+      "sha256": "6b215b79ae3fe2ab316c7db99fa47c89ff792858c6a815341492d97c8add6fd5"
+    },
+    "mobile-web/compose.yaml": {
+      "bytes": 828,
+      "sha256": "fb459cffa2cc82b29f0c8d5ac50ce94452c66a0e83f6420d2eb650611c1102a5"
+    },
+    "mobile-web/dist/assets/account.css": {
+      "bytes": 1752,
+      "sha256": "56cf9e38a62d82ffe53b3a57cbeaac7b492262735f9ada4592713656cd9c3f45"
+    },
+    "mobile-web/dist/assets/app.css": {
+      "bytes": 10239,
+      "sha256": "61a4156ff4f61ff7d3ae5950012f0f40847d3af380c473401851d7305e2c62b3"
+    },
+    "mobile-web/dist/assets/bootstrap.js": {
+      "bytes": 1341,
+      "sha256": "dad9871e5ceff4658b3aa0a6e49771b57f39a6b5864e1e4c72d5fd05a228ac26"
+    },
+    "mobile-web/dist/assets/cloud.js": {
+      "bytes": 4523,
+      "sha256": "4ea2aa3411d4f5ee78ebc9520d38c0f7586454f139b2773599265b585dfe5a3d"
+    },
+    "mobile-web/dist/assets/data/decision-table.json": {
+      "bytes": 674,
+      "sha256": "bfe431c9cf707d123287844d05efaa6513d031c2c33bc8050f4b14392525fcc3"
+    },
+    "mobile-web/dist/assets/data/meal-seed-v3.js": {
+      "bytes": 9049,
+      "sha256": "f4f02c2b23179ae68f6d05c28129b50f71c27bde86d7c61bb74e37d6ae45af53"
+    },
+    "mobile-web/dist/assets/data/menu.json": {
+      "bytes": 8017,
+      "sha256": "32bfd646b2aa9f4c66b599260bcfd24c72f8901a3be6ad7c2dc481d4c915f29f"
+    },
+    "mobile-web/dist/assets/domain.js": {
+      "bytes": 7822,
+      "sha256": "c61dd493b149ab8d9cc727515567c99e0f74cac5452b317a90a841c3595b9de9"
+    },
+    "mobile-web/dist/assets/entry.js": {
+      "bytes": 136,
+      "sha256": "adf90834c8d73138b551fe5fa1c3162a73890fa4d669144fa753ba21defd4053"
+    },
+    "mobile-web/dist/assets/home.js": {
+      "bytes": 3541,
+      "sha256": "ef12314394e1b36d8427d50450ae2d3933ba046c49e06bc1eed6d3684d6e52b2"
+    },
+    "mobile-web/dist/assets/journal.css": {
+      "bytes": 14015,
+      "sha256": "c3a8eecd24facf11257686c2aa3ab1fcfc1bf7936b201e458eb48ff08bdc4406"
+    },
+    "mobile-web/dist/assets/journal.js": {
+      "bytes": 8248,
+      "sha256": "9c2565bf97f4e9bd2dc65611424c2783557e0d882bca113cc4dccf0d2954f61f"
+    },
+    "mobile-web/dist/assets/knowledge-deck.js": {
+      "bytes": 1001,
+      "sha256": "d70bafe451060039e860a00286f656c530feec686d138ed7c861984cb0e59c11"
+    },
+    "mobile-web/dist/assets/log.js": {
+      "bytes": 6921,
+      "sha256": "aaea1b61620efcb95750b8c26c0dd5c34de99155244e49e9ad91e4d374edd0b2"
+    },
+    "mobile-web/dist/assets/login.js": {
+      "bytes": 2437,
+      "sha256": "8dddef1843a49ebc9fa52de76c7e3f91ff0026e4e9a8e44416dc48323832e60f"
+    },
+    "mobile-web/dist/assets/meal-editor.js": {
+      "bytes": 15637,
+      "sha256": "c782a386c2c616fbc4fded3db1fdb50ff4e5aed6392b1fc33dba74a89a91b03b"
+    },
+    "mobile-web/dist/assets/meal-media.js": {
+      "bytes": 3378,
+      "sha256": "69b8d5a2b6594420d25c0dfac10284c488d428257db0e7703345ae5321142023"
+    },
+    "mobile-web/dist/assets/meal-pages.css": {
+      "bytes": 7567,
+      "sha256": "6e5fc8a7c6109f5c1fd0f4af8f1f367a7a857464361fb9f69dfd53450fda5ae1"
+    },
+    "mobile-web/dist/assets/meal-records.js": {
+      "bytes": 5591,
+      "sha256": "640a0d2de22263c6a0819cc588758b9bb2a9aaaefc08ba7b5744386f34cdcf46"
+    },
+    "mobile-web/dist/assets/preference-flow.js": {
+      "bytes": 12638,
+      "sha256": "c4fd1d598ae458fba467cc746e831c43b111c4e8081d91acd3b98bbf533f2021"
+    },
+    "mobile-web/dist/assets/preferences.js": {
+      "bytes": 4644,
+      "sha256": "2c4fd09e700e2b1084517b0c65701de14accff6114278e72a4aaa1c3addd6131"
+    },
+    "mobile-web/dist/assets/profile-stats.js": {
+      "bytes": 2024,
+      "sha256": "74d86a5f068b688053308379a573caea4387a71f401d888b37257a641c84998d"
+    },
+    "mobile-web/dist/assets/profile.js": {
+      "bytes": 3683,
+      "sha256": "cf1e288833887a73afe9e58474036d227b5b4de67f6e1e616fc1ac3e5ba6ae7b"
+    },
+    "mobile-web/dist/assets/recognition-draft.js": {
+      "bytes": 646,
+      "sha256": "b649bba542b7f072a77b39bf036b547d62c282c0014cc97fea255c294c45fc44"
+    },
+    "mobile-web/dist/assets/restart.js": {
+      "bytes": 1162,
+      "sha256": "b1cb7a870813f458d5f0f0fb11ec5e463c581bf97c47a289fdce60eb23114504"
+    },
+    "mobile-web/dist/assets/result.js": {
+      "bytes": 4067,
+      "sha256": "678aa1c92af13481a65c19111851c9900f810b08e9ef634b78f56901a1f1465c"
+    },
+    "mobile-web/dist/assets/services.js": {
+      "bytes": 4307,
+      "sha256": "f6d96c53b1d1196ad69b9358f4dda6b85635cdc654895f5f2cc77f8f4039df4d"
+    },
+    "mobile-web/dist/assets/settings.js": {
+      "bytes": 4312,
+      "sha256": "898e979edb9dbb88b281fcc4c25ffd94499decd5bf1009b7c17c13be3a7e6544"
+    },
+    "mobile-web/dist/index.html": {
+      "bytes": 584,
+      "sha256": "892f47a5429cb1b3fc23c379918318e4d3e54411721c90266c86d060f4fc7d86"
+    },
+    "mobile-web/dist/page0_home_old_user.html": {
+      "bytes": 15899,
+      "sha256": "187b21189cb284cf637892567c084d9029fcadae0eae129d83fdc163459b8225"
+    },
+    "mobile-web/dist/page1_guide.html": {
+      "bytes": 14745,
+      "sha256": "05ce8fccfc81cdf6b266f79a1d0c458e690a5f4594cee5a862c7bba781feb8b1"
+    },
+    "mobile-web/dist/page2_ask.html": {
+      "bytes": 13435,
+      "sha256": "fea9069f3e20f404be36512b19a377593a84bce173daa824bf3054376b348672"
+    },
+    "mobile-web/dist/page3_result.html": {
+      "bytes": 5188,
+      "sha256": "b06f965efeaac274080de134a3ee953b87288d9b35bcc390b432ea62c140b899"
+    },
+    "mobile-web/dist/page4_log.html": {
+      "bytes": 4111,
+      "sha256": "e1954f10449cab2a8f16df3a95db5809c9eae783d8cf0499b403ee71e34084d5"
+    },
+    "mobile-web/dist/page4_meal.html": {
+      "bytes": 5894,
+      "sha256": "608747525e6288683b4017a53fd2534052dd14c28267dc5ac74413cad093e67d"
+    },
+    "mobile-web/dist/page5_profile.html": {
+      "bytes": 4895,
+      "sha256": "decd3942bd9a7983bd378b52fcf42802c470e45216fa9b222399703f407cd35d"
+    },
+    "mobile-web/dist/page6_settings.html": {
+      "bytes": 5192,
+      "sha256": "cbb3e66ab2ea0ec051af532000867a652307b6cc5b4a3f727bcb1068ccce6fd7"
+    },
+    "mobile-web/dist/page_login.html": {
+      "bytes": 1986,
+      "sha256": "3f0c428ab15d11304b15c7de39ffbb447ab46efdbfac53f968da4ac8979f9661"
+    },
+    "mobile-web/dist/restart_guide.html": {
+      "bytes": 1336,
+      "sha256": "b4cde0f3dbf1caa0f5bf2851a44c57e53885ecbe33858e431b983d7ee11b8cc8"
+    },
+    "mobile-web/dist/version.json": {
+      "bytes": 228,
+      "sha256": "825295a156ac8945fd6a3517ba6218ad3169d592de5461c67d8c2eaa9cb33f09"
+    },
+    "mobile-web/docs/backend.md": {
+      "bytes": 6918,
+      "sha256": "3435b3f2b6fec2af0688a53dc588ec07618b718a0d33e7da1b6c581d0f633f11"
+    },
+    "mobile-web/docs/health-knowledge-sources.md": {
+      "bytes": 1135,
+      "sha256": "907a8b5491dd121dfa74744b7de968696616a441a8a4a2ae2fc8f1b6556dd818"
+    },
+    "mobile-web/docs/interface-contracts.md": {
+      "bytes": 6500,
+      "sha256": "8b1b90eba28d0edd8d359b19f52d2020c40e0f32a1c30144612aff9e6f3509d6"
+    },
+    "mobile-web/docs/meal-seed-sources.md": {
+      "bytes": 1026,
+      "sha256": "3adb578bd4e12a17b4dcd0942c070e137883ec1e26f49ac8817392d09be429ed"
+    },
+    "mobile-web/docs/recommendation-rules.md": {
+      "bytes": 2552,
+      "sha256": "a2b77e968e6a8fa9d95faee13fb5f8f2446ef154bbf57249b7c5e753dbbd06f5"
+    },
+    "mobile-web/docs/releases/v1.0.0.md": {
+      "bytes": 2568,
+      "sha256": "d1fc23057e9b432cb9a71d84ea6d94afa32ac076737a06f06522a16f9d094aa4"
+    },
+    "mobile-web/docs/releases/v2.0.0.md": {
+      "bytes": 7115,
+      "sha256": "7f07e36f7e1ffeea582fdef359c97c4f5d0b12d98178d1fd8b112a31d8fbced6"
+    },
+    "mobile-web/package.json": {
+      "bytes": 168,
+      "sha256": "f90463ee507cdb3d102cb7a932b34ef66eeaf865c6c167ae5b6286d2f509e8e3"
+    },
+    "mobile-web/tests/cloud.test.mjs": {
+      "bytes": 3221,
+      "sha256": "5cd1696e57136f677382d3bac963d0899d673392dab92091657096919fe5802b"
+    },
+    "mobile-web/tests/domain.test.mjs": {
+      "bytes": 5160,
+      "sha256": "ffeb749a94398682651594383c365c2e5c506852ea6210ae49ae9c2b3c23e1d0"
+    },
+    "mobile-web/tests/journal.test.mjs": {
+      "bytes": 4822,
+      "sha256": "0e7003ac196b82b3fbb37ff54d5f0fd06ea873bab544e792f1a1c563bd7ac794"
+    },
+    "mobile-web/tests/knowledge.test.mjs": {
+      "bytes": 2060,
+      "sha256": "bfa603c23ae5a37e421ee5e723e9b0a55e7bed47434b377c6afbcdcb82d0abef"
+    },
+    "mobile-web/tests/meal-records.test.mjs": {
+      "bytes": 5285,
+      "sha256": "0880b2edd21de9863916ccfba04aa49f4f4035452df100ce72bf59706d1982a4"
+    },
+    "mobile-web/tests/profile-stats.test.mjs": {
+      "bytes": 3067,
+      "sha256": "97d520f5f3deef7c04093043bc08e724dd0046e01c5cd6d952ba010bfcb6718e"
+    },
+    "mobile-web/tests/recognition-draft.test.mjs": {
+      "bytes": 2530,
+      "sha256": "ca4b7e1c9daddba5a60c722043a3942fd83299b1c7be8793fb7e517d4626e8c1"
+    },
+    "mobile-web/tests/storage.test.mjs": {
+      "bytes": 1899,
+      "sha256": "0675af0a774ca917addae2505716c2ea692f998bbed63a2666c0216d6fcbfdc9"
+    },
+    "启动本地预览.command": {
+      "bytes": 244,
+      "sha256": "b5576bd4ce414826f52a58265487099a141b57b67f7c09d37be4e1222e988706"
+    },
+    "安装后端依赖.command": {
+      "bytes": 729,
+      "sha256": "4c19341737f8fc9244158b90684a4af4852161560c177e323a7373cb86674520"
+    },
+    "校验版本.py": {
+      "bytes": 1234,
+      "sha256": "595c79def78254ee76dbb7d2f8c766eabaec88ed6c0438346eb260fb67f28491"
+    },
+    "版本说明.md": {
+      "bytes": 3139,
+      "sha256": "aa126252098b52a3476381f0f148e0701753496287ca9e17066529fd7b939c43"
+    },
+    "部署说明.md": {
+      "bytes": 1418,
+      "sha256": "48aa55d2e9806838169a07202b0c1aa1ee35f24c6eb0947b7e54677cbca93a06"
+    },
+    "项目资料/今天吃什么.xlsx": {
+      "bytes": 28016,
+      "sha256": "a80238b86e7ad922fbc1c6f4ea744f0ea1e69b348b4ba9573585b2229c95a0d1"
+    },
+    "验证记录/backend-tests.txt": {
+      "bytes": 603,
+      "sha256": "956655905c5ca1619bdf66e358f60028a372dc635a6cd21e69885454352e1b52"
+    },
+    "验证记录/frontend-tests.txt": {
+      "bytes": 8697,
+      "sha256": "1e596d92c2492ca4b520536e8b6b80d6fe95dc92d58ef2a9a807b6f9572ba595"
+    },
+    "验证记录/定版检查.txt": {
+      "bytes": 503,
+      "sha256": "64431ab0fa0fd962982f7c5f918ece520b140fbce8bf860e0aa792e737b73e26"
+    }
+  }
+}

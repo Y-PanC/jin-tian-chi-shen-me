@@ -1,0 +1,238 @@
+TAP version 13
+# Subtest: API requests use same-origin cookies and explicit mutation headers without browser secrets
+ok 1 - API requests use same-origin cookies and explicit mutation headers without browser secrets
+  ---
+  duration_ms: 58.275791
+  type: 'test'
+  ...
+# Subtest: failed cloud writes retain the current state and never overwrite legacy local records
+ok 2 - failed cloud writes retain the current state and never overwrite legacy local records
+  ---
+  duration_ms: 1.928
+  type: 'test'
+  ...
+# Subtest: successful meal writes keep server revisions and replace a meal rather than duplicating it
+ok 3 - successful meal writes keep server revisions and replace a meal rather than duplicating it
+  ---
+  duration_ms: 0.862292
+  type: 'test'
+  ...
+# Subtest: cloud reads isolate account records from untouched local browser data
+ok 4 - cloud reads isolate account records from untouched local browser data
+  ---
+  duration_ms: 1.803833
+  type: 'test'
+  ...
+# Subtest: every declared decision-table ID exists and has complete fields
+ok 5 - every declared decision-table ID exists and has complete fields
+  ---
+  duration_ms: 1.852417
+  type: 'test'
+  ...
+# Subtest: all supported combinations return two disjoint batches within hard constraints
+ok 6 - all supported combinations return two disjoint batches within hard constraints
+  ---
+  duration_ms: 283.245834
+  type: 'test'
+  ...
+# Subtest: the demo chain excludes the salty previous meal and cites its actual record
+ok 7 - the demo chain excludes the salty previous meal and cites its actual record
+  ---
+  duration_ms: 0.994917
+  type: 'test'
+  ...
+# Subtest: free-text custom restrictions and impossible budgets do not bypass exclusions
+ok 8 - free-text custom restrictions and impossible budgets do not bypass exclusions
+  ---
+  duration_ms: 0.225791
+  type: 'test'
+  ...
+# Subtest: photo, voice and text adapters can share parsing; user corrections override inferred tags
+ok 9 - photo, voice and text adapters can share parsing; user corrections override inferred tags
+  ---
+  duration_ms: 1.111375
+  type: 'test'
+  ...
+# Subtest: backdated edits do not become the latest eaten meal; portrait counts confirmed tags once
+ok 10 - backdated edits do not become the latest eaten meal; portrait counts confirmed tags once
+  ---
+  duration_ms: 1.025833
+  type: 'test'
+  ...
+# Subtest: a real saved meal takes precedence over a stale recommendation in the ask question
+ok 11 - a real saved meal takes precedence over a stale recommendation in the ask question
+  ---
+  duration_ms: 6.482667
+  type: 'test'
+  ...
+# Subtest: V7 journals and existing structured records share one lossless log source
+ok 12 - V7 journals and existing structured records share one lossless log source
+  ---
+  duration_ms: 18.289458
+  type: 'test'
+  ...
+# Subtest: recommendations use the last V7 journal and its inferred taste
+ok 13 - recommendations use the last V7 journal and its inferred taste
+  ---
+  duration_ms: 32.037959
+  type: 'test'
+  ...
+# Subtest: samples only initialize an untouched browser and never return after clearing
+ok 14 - samples only initialize an untouched browser and never return after clearing
+  ---
+  duration_ms: 10.002167
+  type: 'test'
+  ...
+# Subtest: settings merge independently from business preferences and keep extra fields
+ok 15 - settings merge independently from business preferences and keep extra fields
+  ---
+  duration_ms: 0.5875
+  type: 'test'
+  ...
+# Subtest: bad dates, corrupt storage and negated tastes are handled without invented facts
+ok 16 - bad dates, corrupt storage and negated tastes are handled without invented facts
+  ---
+  duration_ms: 1.578916
+  type: 'test'
+  ...
+# Subtest: knowledge covers every card before repeating and keeps consecutive batches disjoint
+ok 17 - knowledge covers every card before repeating and keeps consecutive batches disjoint
+  ---
+  duration_ms: 83.040083
+  type: 'test'
+  ...
+# Subtest: random batches mix cards rather than retaining fixed groups
+ok 18 - random batches mix cards rather than retaining fixed groups
+  ---
+  duration_ms: 0.727375
+  type: 'test'
+  ...
+# Subtest: knowledge tolerates stale history and a small or empty card pool
+ok 19 - knowledge tolerates stale history and a small or empty card pool
+  ---
+  duration_ms: 2.395375
+  type: 'test'
+  ...
+# Subtest: structured meals round-trip every editable field and preserve record identity when edited
+ok 20 - structured meals round-trip every editable field and preserve record identity when edited
+  ---
+  duration_ms: 16.235166
+  type: 'test'
+  ...
+# Subtest: legacy meals keep their original text in editable remarks and do not acquire invented dates
+ok 21 - legacy meals keep their original text in editable remarks and do not acquire invented dates
+  ---
+  duration_ms: 0.430375
+  type: 'test'
+  ...
+# Subtest: list summaries omit duplicate source text while editors retain it and independent notes stay visible
+ok 22 - list summaries omit duplicate source text while editors retain it and independent notes stay visible
+  ---
+  duration_ms: 0.984458
+  type: 'test'
+  ...
+# Subtest: year month and day filters use local meal time, handle undated records, and sort after edits
+ok 23 - year month and day filters use local meal time, handle undated records, and sort after edits
+  ---
+  duration_ms: 0.87075
+  type: 'test'
+  ...
+# Subtest: invalid meal details are rejected before persistence, including dates, tags and photo limits
+ok 24 - invalid meal details are rejected before persistence, including dates, tags and photo limits
+  ---
+  duration_ms: 4.408917
+  type: 'test'
+  ...
+# Subtest: profile counts meals, distinct dishes, and local meal days across old and new records
+ok 25 - profile counts meals, distinct dishes, and local meal days across old and new records
+  ---
+  duration_ms: 8.303125
+  type: 'test'
+  ...
+# Subtest: empty and undated journals do not invent record days or dishes
+ok 26 - empty and undated journals do not invent record days or dishes
+  ---
+  duration_ms: 1.132583
+  type: 'test'
+  ...
+# Subtest: taste axes separate sweet and savory tags without inferring components from a light meal
+ok 27 - taste axes separate sweet and savory tags without inferring components from a light meal
+  ---
+  duration_ms: 3.719667
+  type: 'test'
+  ...
+# Subtest: radar display uses one adaptive linear scale without changing reported rates or inventing zero values
+ok 28 - radar display uses one adaptive linear scale without changing reported rates or inventing zero values
+  ---
+  duration_ms: 0.3935
+  type: 'test'
+  ...
+# Subtest: photo results automatically fill empty editable fields
+ok 29 - photo results automatically fill empty editable fields
+  ---
+  duration_ms: 9.281541
+  type: 'test'
+  ...
+# Subtest: typing during recognition is preserved while untouched tags are filled
+ok 30 - typing during recognition is preserved while untouched tags are filled
+  ---
+  duration_ms: 2.613166
+  type: 'test'
+  ...
+# Subtest: tag edits during recognition are preserved independently of the dish name
+ok 31 - tag edits during recognition are preserved independently of the dish name
+  ---
+  duration_ms: 0.203583
+  type: 'test'
+  ...
+# Subtest: existing handwritten names are preserved when adding a photo
+ok 32 - existing handwritten names are preserved when adding a photo
+  ---
+  duration_ms: 0.1455
+  type: 'test'
+  ...
+# Subtest: another photo can update an unchanged automatically filled dish name
+ok 33 - another photo can update an unchanged automatically filled dish name
+  ---
+  duration_ms: 36.956667
+  type: 'test'
+  ...
+# Subtest: tag merging deduplicates results and respects the twelve-tag limit
+ok 34 - tag merging deduplicates results and respects the twelve-tag limit
+  ---
+  duration_ms: 13.881959
+  type: 'test'
+  ...
+# Subtest: saving and editing one meal preserves its identity instead of duplicating it
+ok 35 - saving and editing one meal preserves its identity instead of duplicating it
+  ---
+  duration_ms: 24.876208
+  type: 'test'
+  ...
+# Subtest: invalid stored data is preserved and save failures remain explicit
+ok 36 - invalid stored data is preserved and save failures remain explicit
+  ---
+  duration_ms: 0.427791
+  type: 'test'
+  ...
+# Subtest: blank names and future timestamps are rejected before storage changes
+ok 37 - blank names and future timestamps are rejected before storage changes
+  ---
+  duration_ms: 0.181291
+  type: 'test'
+  ...
+# Subtest: legacy records without dates do not invent a meal time or period
+ok 38 - legacy records without dates do not invent a meal time or period
+  ---
+  duration_ms: 1.467
+  type: 'test'
+  ...
+1..38
+# tests 38
+# suites 0
+# pass 38
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 474.149875
