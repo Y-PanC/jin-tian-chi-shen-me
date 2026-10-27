@@ -1,0 +1,169 @@
+[
+  {
+    "id": "record-guilin",
+    "dish": "桂林卤菜粉",
+    "aliases": [
+      "卤菜粉",
+      "桂林米粉",
+      "牛腩桂林米粉",
+      "三鲜桂林米粉"
+    ],
+    "image": "assets/images/dishes/record-guilin.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "桂林卤菜粉真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Guilin_mifan.jpg",
+    "imageAuthor": "Popo le Chien",
+    "imageLicense": "CC0",
+    "imageLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-canteen",
+    "dish": "食堂自选菜",
+    "aliases": [
+      "自选菜",
+      "河西食堂自选菜",
+      "称重自选餐",
+      "自选称重餐",
+      "自选荤素套餐",
+      "食堂套餐",
+      "大众菜套餐",
+      "食堂盖饭"
+    ],
+    "image": "assets/images/dishes/record-canteen.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "食堂自选菜真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hong_Kong_International_Airport_Terminal_1_Level_7_canteen_food_16-10-2025.jpg",
+    "imageAuthor": "LN9267",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-fried-chicken",
+    "dish": "炸鸡",
+    "aliases": [
+      "炸鸡套餐",
+      "鸡腿堡／炸鸡套餐"
+    ],
+    "image": "assets/images/dishes/record-fried-chicken.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "炸鸡真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Fried-Chicken-Set.jpg",
+    "imageAuthor": "Evan-Amos",
+    "imageLicense": "CC0",
+    "imageLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-pork",
+    "dish": "小炒肉",
+    "aliases": [
+      "小炒肉套餐"
+    ],
+    "image": "assets/images/dishes/record-pork.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "小炒肉真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Lajiao_Chaorou_at_Xiangzhongyuan_Hunan_Cuisine,_Beijing_(20240131171227).jpg",
+    "imageAuthor": "N509FZ",
+    "imageLicense": "CC BY-SA 4.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-beef-rice",
+    "dish": "小锅牛肉饭",
+    "aliases": [],
+    "image": "assets/images/dishes/record-beef-rice.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "小锅牛肉饭真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Gyuu-don_001.jpg",
+    "imageAuthor": "Ocdp",
+    "imageLicense": "CC0",
+    "imageLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-buns",
+    "dish": "面点套餐",
+    "aliases": [
+      "风味面食套餐"
+    ],
+    "image": "assets/images/dishes/record-buns.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "面点套餐真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Nangua_Baozi_(chinese_dumplings).jpg",
+    "imageAuthor": "J. Samuel Burner",
+    "imageLicense": "CC BY 2.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-chicken-rice",
+    "dish": "鸡肉盖浇饭",
+    "aliases": [],
+    "image": "assets/images/dishes/record-chicken-rice.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "鸡肉盖浇饭真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Claypot_Chicken_Rice,_Singapore.JPG",
+    "imageAuthor": "Banej",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-egg-rice",
+    "dish": "鸡蛋炒饭",
+    "aliases": [
+      "蛋炒饭",
+      "炒饭"
+    ],
+    "image": "assets/images/dishes/record-egg-rice.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "鸡蛋炒饭真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Egg_fried_rice.jpg",
+    "imageAuthor": "ProjectManhattan",
+    "imageLicense": "CC BY-SA 3.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-curry",
+    "dish": "咖喱鸡肉饭",
+    "aliases": [],
+    "image": "assets/images/dishes/record-curry.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "咖喱鸡肉饭真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_curry_rice.jpg",
+    "imageAuthor": "Masserie",
+    "imageLicense": "CC BY 3.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  },
+  {
+    "id": "record-tomato-egg",
+    "dish": "番茄炒蛋",
+    "aliases": [
+      "西红柿炒鸡蛋",
+      "番茄炒鸡蛋"
+    ],
+    "image": "assets/images/dishes/record-tomato-egg.jpg",
+    "imageKind": "photo",
+    "imageCaption": "菜式参考图",
+    "imageAlt": "番茄炒蛋真实菜式参考照片",
+    "imageSourceUrl": "https://commons.wikimedia.org/wiki/File:Hunan_cuisine,_stir-fried_tomato_with_eggs.jpg",
+    "imageAuthor": "Huangdan2060",
+    "imageLicense": "CC BY 3.0",
+    "imageLicenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "imageModifications": "下载缩略图并压缩；页面按卡片比例裁切"
+  }
+]

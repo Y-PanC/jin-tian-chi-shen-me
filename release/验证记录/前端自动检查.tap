@@ -1,0 +1,610 @@
+TAP version 13
+# Subtest: navigation and reload restore the current step and every answer for the same account
+ok 1 - navigation and reload restore the current step and every answer for the same account
+  ---
+  duration_ms: 7.932208
+  type: 'test'
+  ...
+# Subtest: successful recommended-meal completion clears its round and prevents bfcache from restoring it
+ok 2 - successful recommended-meal completion clears its round and prevents bfcache from restoring it
+  ---
+  duration_ms: 0.852292
+  type: 'test'
+  ...
+# Subtest: saving an older editor does not erase a newer selected recommendation
+ok 3 - saving an older editor does not erase a newer selected recommendation
+  ---
+  duration_ms: 0.202083
+  type: 'test'
+  ...
+# Subtest: an old selection or another account cannot clear a newer active round
+ok 4 - an old selection or another account cannot clear a newer active round
+  ---
+  duration_ms: 0.387792
+  type: 'test'
+  ...
+# Subtest: corrupt drafts are ignored without changing the source and storage failures stay explicit
+ok 5 - corrupt drafts are ignored without changing the source and storage failures stay explicit
+  ---
+  duration_ms: 0.480625
+  type: 'test'
+  ...
+# Subtest: returning to edit preserves all three answers and migrates older question answers
+ok 6 - returning to edit preserves all three answers and migrates older question answers
+  ---
+  duration_ms: 1.938417
+  type: 'test'
+  ...
+# Subtest: multiple categories match by OR while price and delivery remain hard limits
+ok 7 - multiple categories match by OR while price and delivery remain hard limits
+  ---
+  duration_ms: 1.776458
+  type: 'test'
+  ...
+# Subtest: new requests use the declared price and delivery limits and reject invalid option IDs
+ok 8 - new requests use the declared price and delivery limits and reject invalid option IDs
+  ---
+  duration_ms: 0.256083
+  type: 'test'
+  ...
+# Subtest: budget ranges enforce both bounds, including unbounded high budgets
+ok 9 - budget ranges enforce both bounds, including unbounded high budgets
+  ---
+  duration_ms: 1.289125
+  type: 'test'
+  ...
+# Subtest: time-limited recommendations exclude unknown or over-limit delivery estimates
+ok 10 - time-limited recommendations exclude unknown or over-limit delivery estimates
+  ---
+  duration_ms: 0.331791
+  type: 'test'
+  ...
+# Subtest: every displayed food category has sample dishes with explicit delivery estimates
+ok 11 - every displayed food category has sample dishes with explicit delivery estimates
+  ---
+  duration_ms: 0.337708
+  type: 'test'
+  ...
+# Subtest: all pages obey category, both price bounds, delivery, allergy, spice and last-meal constraints
+ok 12 - all pages obey category, both price bounds, delivery, allergy, spice and last-meal constraints
+  ---
+  duration_ms: 205.766584
+  type: 'test'
+  ...
+# Subtest: no matching category or time does not silently fall back to unrelated choices
+ok 13 - no matching category or time does not silently fall back to unrelated choices
+  ---
+  duration_ms: 0.469416
+  type: 'test'
+  ...
+# Subtest: API requests use same-origin cookies and explicit mutation headers without browser secrets
+ok 14 - API requests use same-origin cookies and explicit mutation headers without browser secrets
+  ---
+  duration_ms: 59.754917
+  type: 'test'
+  ...
+# Subtest: failed cloud writes retain the current state and never overwrite legacy local records
+ok 15 - failed cloud writes retain the current state and never overwrite legacy local records
+  ---
+  duration_ms: 1.798792
+  type: 'test'
+  ...
+# Subtest: successful meal writes keep server revisions and replace a meal rather than duplicating it
+ok 16 - successful meal writes keep server revisions and replace a meal rather than duplicating it
+  ---
+  duration_ms: 34.158375
+  type: 'test'
+  ...
+# Subtest: cloud reads isolate account records from untouched local browser data
+ok 17 - cloud reads isolate account records from untouched local browser data
+  ---
+  duration_ms: 7.426959
+  type: 'test'
+  ...
+# Subtest: deleting one meal sends its revision and updates only that meal after success
+ok 18 - deleting one meal sends its revision and updates only that meal after success
+  ---
+  duration_ms: 2.775458
+  type: 'test'
+  ...
+# Subtest: failed meal deletion keeps records and reports conflicts without touching local history
+ok 19 - failed meal deletion keeps records and reports conflicts without touching local history
+  ---
+  duration_ms: 0.901625
+  type: 'test'
+  ...
+# Subtest: signing out or switching accounts clears saved recommendation pages and selected meals
+ok 20 - signing out or switching accounts clears saved recommendation pages and selected meals
+  ---
+  duration_ms: 0.646333
+  type: 'test'
+  ...
+# Subtest: every declared decision-table ID exists and has complete fields
+ok 21 - every declared decision-table ID exists and has complete fields
+  ---
+  duration_ms: 1.340292
+  type: 'test'
+  ...
+# Subtest: all supported combinations return two disjoint batches within hard constraints
+ok 22 - all supported combinations return two disjoint batches within hard constraints
+  ---
+  duration_ms: 400.685041
+  type: 'test'
+  ...
+# Subtest: the demo chain excludes the salty previous meal and cites its actual record
+ok 23 - the demo chain excludes the salty previous meal and cites its actual record
+  ---
+  duration_ms: 1.208375
+  type: 'test'
+  ...
+# Subtest: free-text custom restrictions and impossible budgets do not bypass exclusions
+ok 24 - free-text custom restrictions and impossible budgets do not bypass exclusions
+  ---
+  duration_ms: 0.311333
+  type: 'test'
+  ...
+# Subtest: photo, voice and text adapters can share parsing; user corrections override inferred tags
+ok 25 - photo, voice and text adapters can share parsing; user corrections override inferred tags
+  ---
+  duration_ms: 2.0785
+  type: 'test'
+  ...
+# Subtest: backdated edits do not become the latest eaten meal; portrait counts confirmed tags once
+ok 26 - backdated edits do not become the latest eaten meal; portrait counts confirmed tags once
+  ---
+  duration_ms: 1.481417
+  type: 'test'
+  ...
+# Subtest: a real saved meal takes precedence over a stale recommendation in the ask question
+ok 27 - a real saved meal takes precedence over a stale recommendation in the ask question
+  ---
+  duration_ms: 7.065125
+  type: 'test'
+  ...
+# Subtest: profile budgets match all ask options and retain legacy or high-budget selections
+ok 28 - profile budgets match all ask options and retain legacy or high-budget selections
+  ---
+  duration_ms: 3.652459
+  type: 'test'
+  ...
+# Subtest: V7 journals and existing structured records share one lossless log source
+ok 29 - V7 journals and existing structured records share one lossless log source
+  ---
+  duration_ms: 5.080792
+  type: 'test'
+  ...
+# Subtest: recommendations use the last V7 journal and its inferred taste
+ok 30 - recommendations use the last V7 journal and its inferred taste
+  ---
+  duration_ms: 23.015375
+  type: 'test'
+  ...
+# Subtest: samples only initialize an untouched browser and never return after clearing
+ok 31 - samples only initialize an untouched browser and never return after clearing
+  ---
+  duration_ms: 2.834375
+  type: 'test'
+  ...
+# Subtest: settings merge independently from business preferences and keep extra fields
+ok 32 - settings merge independently from business preferences and keep extra fields
+  ---
+  duration_ms: 0.41675
+  type: 'test'
+  ...
+# Subtest: bad dates, corrupt storage and negated tastes are handled without invented facts
+ok 33 - bad dates, corrupt storage and negated tastes are handled without invented facts
+  ---
+  duration_ms: 1.1905
+  type: 'test'
+  ...
+# Subtest: knowledge covers every card before repeating and keeps consecutive batches disjoint
+ok 34 - knowledge covers every card before repeating and keeps consecutive batches disjoint
+  ---
+  duration_ms: 44.374042
+  type: 'test'
+  ...
+# Subtest: random batches mix cards rather than retaining fixed groups
+ok 35 - random batches mix cards rather than retaining fixed groups
+  ---
+  duration_ms: 0.695041
+  type: 'test'
+  ...
+# Subtest: knowledge tolerates stale history and a small or empty card pool
+ok 36 - knowledge tolerates stale history and a small or empty card pool
+  ---
+  duration_ms: 0.866916
+  type: 'test'
+  ...
+# Subtest: structured meals round-trip every editable field and preserve record identity when edited
+ok 37 - structured meals round-trip every editable field and preserve record identity when edited
+  ---
+  duration_ms: 11.246083
+  type: 'test'
+  ...
+# Subtest: legacy meals keep their original text in editable remarks and do not acquire invented dates
+ok 38 - legacy meals keep their original text in editable remarks and do not acquire invented dates
+  ---
+  duration_ms: 0.348833
+  type: 'test'
+  ...
+# Subtest: list summaries omit duplicate source text while editors retain it and independent notes stay visible
+ok 39 - list summaries omit duplicate source text while editors retain it and independent notes stay visible
+  ---
+  duration_ms: 0.560625
+  type: 'test'
+  ...
+# Subtest: year month and day filters use local meal time, handle undated records, and sort after edits
+ok 40 - year month and day filters use local meal time, handle undated records, and sort after edits
+  ---
+  duration_ms: 0.68075
+  type: 'test'
+  ...
+# Subtest: invalid meal details are rejected before persistence, including dates, tags and photo limits
+ok 41 - invalid meal details are rejected before persistence, including dates, tags and photo limits
+  ---
+  duration_ms: 0.943541
+  type: 'test'
+  ...
+# Subtest: settings preferences keep existing answers and return directly to settings after saving
+ok 42 - settings preferences keep existing answers and return directly to settings after saving
+  ---
+  duration_ms: 18.234667
+  type: 'test'
+  ...
+# Subtest: failed preference saves keep the editing page and do not open success navigation
+ok 43 - failed preference saves keep the editing page and do not open success navigation
+  ---
+  duration_ms: 7.8365
+  type: 'test'
+  ...
+# Subtest: existing profile and onboarding completion destinations are preserved
+ok 44 - existing profile and onboarding completion destinations are preserved
+  ---
+  duration_ms: 11.233708
+  type: 'test'
+  ...
+# Subtest: profile counts meals, distinct dishes, and local meal days across old and new records
+ok 45 - profile counts meals, distinct dishes, and local meal days across old and new records
+  ---
+  duration_ms: 7.275208
+  type: 'test'
+  ...
+# Subtest: empty and undated journals do not invent record days or dishes
+ok 46 - empty and undated journals do not invent record days or dishes
+  ---
+  duration_ms: 0.410125
+  type: 'test'
+  ...
+# Subtest: taste axes separate sweet and savory tags without inferring components from a light meal
+ok 47 - taste axes separate sweet and savory tags without inferring components from a light meal
+  ---
+  duration_ms: 0.665792
+  type: 'test'
+  ...
+# Subtest: radar display uses one adaptive linear scale without changing reported rates or inventing zero values
+ok 48 - radar display uses one adaptive linear scale without changing reported rates or inventing zero values
+  ---
+  duration_ms: 0.344083
+  type: 'test'
+  ...
+# Subtest: photo results automatically fill empty editable fields
+ok 49 - photo results automatically fill empty editable fields
+  ---
+  duration_ms: 1.502458
+  type: 'test'
+  ...
+# Subtest: typing during recognition is preserved while untouched tags are filled
+ok 50 - typing during recognition is preserved while untouched tags are filled
+  ---
+  duration_ms: 0.608417
+  type: 'test'
+  ...
+# Subtest: tag edits during recognition are preserved independently of the dish name
+ok 51 - tag edits during recognition are preserved independently of the dish name
+  ---
+  duration_ms: 0.234292
+  type: 'test'
+  ...
+# Subtest: existing handwritten names are preserved when adding a photo
+ok 52 - existing handwritten names are preserved when adding a photo
+  ---
+  duration_ms: 0.162292
+  type: 'test'
+  ...
+# Subtest: another photo can update an unchanged automatically filled dish name
+ok 53 - another photo can update an unchanged automatically filled dish name
+  ---
+  duration_ms: 3.132667
+  type: 'test'
+  ...
+# Subtest: tag merging deduplicates results and respects the twelve-tag limit
+ok 54 - tag merging deduplicates results and respects the twelve-tag limit
+  ---
+  duration_ms: 0.205
+  type: 'test'
+  ...
+# Subtest: evidence uses the exact saved dish and scores, preserving the recommendation page and position
+ok 55 - evidence uses the exact saved dish and scores, preserving the recommendation page and position
+  ---
+  duration_ms: 5.422375
+  type: 'test'
+  ...
+# Subtest: stale recommendations, another account, unknown dishes and unrelated pages cannot expose evidence
+ok 56 - stale recommendations, another account, unknown dishes and unrelated pages cannot expose evidence
+  ---
+  duration_ms: 0.8065
+  type: 'test'
+  ...
+# Subtest: missing or incomplete score data falls back instead of rendering a broken detail page
+ok 57 - missing or incomplete score data falls back instead of rendering a broken detail page
+  ---
+  duration_ms: 1.262042
+  type: 'test'
+  ...
+# Subtest: evidence routes encode dish identifiers and keep page numbers relative to the app
+ok 58 - evidence routes encode dish identifiers and keep page numbers relative to the app
+  ---
+  duration_ms: 0.341959
+  type: 'test'
+  ...
+# Subtest: health index rounds to half-star bands and keeps unknown values distinct from zero
+ok 59 - health index rounds to half-star bands and keeps unknown values distinct from zero
+  ---
+  duration_ms: 2.180666
+  type: 'test'
+  ...
+# Subtest: the second-level page shows all scoring dimensions, adjustments and image attribution directly
+ok 60 - the second-level page shows all scoring dimensions, adjustments and image attribution directly
+  ---
+  duration_ms: 3.653167
+  type: 'test'
+  ...
+# Subtest: card evidence navigation flushes the current view and prevents leaving if saving that view fails
+ok 61 - card evidence navigation flushes the current view and prevents leaving if saving that view fails
+  ---
+  duration_ms: 0.534709
+  type: 'test'
+  ...
+# Subtest: a selected recommendation supplies its dish, all card tags and a removable reference photo
+ok 62 - a selected recommendation supplies its dish, all card tags and a removable reference photo
+  ---
+  duration_ms: 8.578
+  type: 'test'
+  ...
+# Subtest: reference photos only use local catalog images, excluding remote URLs and placeholders
+ok 63 - reference photos only use local catalog images, excluding remote URLs and placeholders
+  ---
+  duration_ms: 0.764375
+  type: 'test'
+  ...
+# Subtest: preparing the catalog image uses its existing draft photo identity and reports read failures
+ok 64 - preparing the catalog image uses its existing draft photo identity and reports read failures
+  ---
+  duration_ms: 0.612625
+  type: 'test'
+  ...
+# Subtest: a saved recommendation retains its photo and user edits through the normal record format
+ok 65 - a saved recommendation retains its photo and user edits through the normal record format
+  ---
+  duration_ms: 7.115083
+  type: 'test'
+  ...
+# Subtest: failed uploads can be retried without duplicate photos, and removed reference photos stay removed
+ok 66 - failed uploads can be retried without duplicate photos, and removed reference photos stay removed
+  ---
+  duration_ms: 0.748333
+  type: 'test'
+  ...
+# Subtest: all recommendation pages cover eligible dishes once and retain the original first choices
+ok 67 - all recommendation pages cover eligible dishes once and retain the original first choices
+  ---
+  duration_ms: 4.317
+  type: 'test'
+  ...
+# Subtest: later pages keep allergy, spice, budget and previous-meal exclusions
+ok 68 - later pages keep allergy, spice, budget and previous-meal exclusions
+  ---
+  duration_ms: 7.271459
+  type: 'test'
+  ...
+# Subtest: empty and short result sets have finite pages without repeating dishes
+ok 69 - empty and short result sets have finite pages without repeating dishes
+  ---
+  duration_ms: 0.238791
+  type: 'test'
+  ...
+# Subtest: saved results retain the exact page, dishes, reasons and scroll position across a reload
+ok 70 - saved results retain the exact page, dishes, reasons and scroll position across a reload
+  ---
+  duration_ms: 1.433042
+  type: 'test'
+  ...
+# Subtest: another account, new answers or changed long-term preferences cannot reuse a saved result
+ok 71 - another account, new answers or changed long-term preferences cannot reuse a saved result
+  ---
+  duration_ms: 0.896042
+  type: 'test'
+  ...
+# Subtest: corrupt saved pages and invalid positions are regenerated instead of rendered
+ok 72 - corrupt saved pages and invalid positions are regenerated instead of rendered
+  ---
+  duration_ms: 1.7125
+  type: 'test'
+  ...
+# Subtest: meal return targets keep the chosen page and reject external or unrelated routes
+ok 73 - meal return targets keep the chosen page and reject external or unrelated routes
+  ---
+  duration_ms: 0.597833
+  type: 'test'
+  ...
+# Subtest: one page highlights different evidence without changing scores or order
+ok 74 - one page highlights different evidence without changing scores or order
+  ---
+  duration_ms: 7.882917
+  type: 'test'
+  ...
+# Subtest: visible reasons and summary do not invent meal history when no saved meal exists
+ok 75 - visible reasons and summary do not invent meal history when no saved meal exists
+  ---
+  duration_ms: 0.943833
+  type: 'test'
+  ...
+# Subtest: summary reflects saved heavy-taste history and actual current page features
+ok 76 - summary reflects saved heavy-taste history and actual current page features
+  ---
+  duration_ms: 0.976958
+  type: 'test'
+  ...
+# Subtest: presentation preserves corrections, warnings and evidence for incomplete meals
+ok 77 - presentation preserves corrections, warnings and evidence for incomplete meals
+  ---
+  duration_ms: 0.517917
+  type: 'test'
+  ...
+# Subtest: empty results receive a useful condition-adjustment summary
+ok 78 - empty results receive a useful condition-adjustment summary
+  ---
+  duration_ms: 0.162708
+  type: 'test'
+  ...
+# Subtest: document cases retain the supplied health, sales, suitability and matching image data
+ok 79 - document cases retain the supplied health, sales, suitability and matching image data
+  ---
+  duration_ms: 41.296625
+  type: 'test'
+  ...
+# Subtest: displayed weighted dimensions and adjustments reconcile to the ranking score
+ok 80 - displayed weighted dimensions and adjustments reconcile to the ranking score
+  ---
+  duration_ms: 7.88275
+  type: 'test'
+  ...
+# Subtest: review references use their own rate, preserve health weights and explicitly handle missing data
+ok 81 - review references use their own rate, preserve health weights and explicitly handle missing data
+  ---
+  duration_ms: 0.827083
+  type: 'test'
+  ...
+# Subtest: health references remain distinct from personalized recommendation totals
+ok 82 - health references remain distinct from personalized recommendation totals
+  ---
+  duration_ms: 0.463583
+  type: 'test'
+  ...
+# Subtest: history-based reasons only use saved meal facts, and changed taste changes its dimension
+ok 83 - history-based reasons only use saved meal facts, and changed taste changes its dimension
+  ---
+  duration_ms: 0.275292
+  type: 'test'
+  ...
+# Subtest: missing monthly sales are explicit and never generate a popularity reason
+ok 84 - missing monthly sales are explicit and never generate a popularity reason
+  ---
+  duration_ms: 0.18325
+  type: 'test'
+  ...
+# Subtest: catalog monthly sales are complete and feed the same weighted score and ordinary display text
+ok 85 - catalog monthly sales are complete and feed the same weighted score and ordinary display text
+  ---
+  duration_ms: 0.247958
+  type: 'test'
+  ...
+# Subtest: recent duplicate penalties use actual meals and last-meal exclusions also cover multi-dish records
+ok 86 - recent duplicate penalties use actual meals and last-meal exclusions also cover multi-dish records
+  ---
+  duration_ms: 11.411792
+  type: 'test'
+  ...
+# Subtest: new case scores never relax restrictions, selected category, budget or delivery limits
+ok 87 - new case scores never relax restrictions, selected category, budget or delivery limits
+  ---
+  duration_ms: 1.499667
+  type: 'test'
+  ...
+# Subtest: scored pages and their explanations survive restoration as one consistent snapshot
+ok 88 - scored pages and their explanations survive restoration as one consistent snapshot
+  ---
+  duration_ms: 9.833167
+  type: 'test'
+  ...
+# Subtest: newly saved or edited meals invalidate old history-based reasons without changing the answers
+ok 89 - newly saved or edited meals invalidate old history-based reasons without changing the answers
+  ---
+  duration_ms: 0.440292
+  type: 'test'
+  ...
+# Subtest: all original imported meal names resolve to local, real reference photos
+ok 90 - all original imported meal names resolve to local, real reference photos
+  ---
+  duration_ms: 17.510875
+  type: 'test'
+  ...
+# Subtest: personal photos remain first choice and unrelated text does not get a guessed image
+ok 91 - personal photos remain first choice and unrelated text does not get a guessed image
+  ---
+  duration_ms: 1.469625
+  type: 'test'
+  ...
+# Subtest: aliases and multi-dish meals match known foods while record details remain intact
+ok 92 - aliases and multi-dish meals match known foods while record details remain intact
+  ---
+  duration_ms: 2.589791
+  type: 'test'
+  ...
+# Subtest: non-photo assets and external paths cannot be used as record photos
+ok 93 - non-photo assets and external paths cannot be used as record photos
+  ---
+  duration_ms: 0.289208
+  type: 'test'
+  ...
+# Subtest: legacy single-choice results receive an account-bound round that can complete normally
+ok 94 - legacy single-choice results receive an account-bound round that can complete normally
+  ---
+  duration_ms: 2.622375
+  type: 'test'
+  ...
+# Subtest: an existing matching draft supplies its round but a newer different selection stays independent
+ok 95 - an existing matching draft supplies its round but a newer different selection stays independent
+  ---
+  duration_ms: 0.563292
+  type: 'test'
+  ...
+# Subtest: foreign-account and invalid requests never populate the current account result
+ok 96 - foreign-account and invalid requests never populate the current account result
+  ---
+  duration_ms: 0.611209
+  type: 'test'
+  ...
+# Subtest: saving and editing one meal preserves its identity instead of duplicating it
+ok 97 - saving and editing one meal preserves its identity instead of duplicating it
+  ---
+  duration_ms: 15.406917
+  type: 'test'
+  ...
+# Subtest: invalid stored data is preserved and save failures remain explicit
+ok 98 - invalid stored data is preserved and save failures remain explicit
+  ---
+  duration_ms: 0.512167
+  type: 'test'
+  ...
+# Subtest: blank names and future timestamps are rejected before storage changes
+ok 99 - blank names and future timestamps are rejected before storage changes
+  ---
+  duration_ms: 0.174083
+  type: 'test'
+  ...
+# Subtest: legacy records without dates do not invent a meal time or period
+ok 100 - legacy records without dates do not invent a meal time or period
+  ---
+  duration_ms: 3.521708
+  type: 'test'
+  ...
+1..100
+# tests 100
+# suites 0
+# pass 100
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 547.939708

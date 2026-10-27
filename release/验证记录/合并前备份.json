@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-27",
+  "request": "将本轮修改统一合并到 v4.0",
+  "originalTagObject": "d34786ee2018b2819e6a31348d083584201d25e9",
+  "originalCommit": "3e56b15a310b43b617953d53387e573b5510023b",
+  "backupTag": "v4.0.0-before-merge-20261027",
+  "backupArchive": "历史/v4.0.0_合并前_20261027",
+  "originalChecksumFileSha256": "8fb748e9e889a75d29e84d37dbbe4ceca7361f8393c3ebe7af32a9dbc7d904cc"
+}
