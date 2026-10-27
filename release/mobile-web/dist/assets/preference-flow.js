@@ -4,7 +4,7 @@
   const $ = id => document.getElementById(id);
   const isGuide = document.body.dataset.flow === 'guide';
   const returningToProfile = isGuide && new URLSearchParams(location.search).get('return') === 'profile';
-  const completionDestination = returningToProfile ? 'page5_profile.html' : 'page2_ask.html';
+  const completionDestination = returningToProfile ? 'page5_profile.html' : 'page0_home_old_user.html';
   const rawProfile = P.read('localStorage', 'user_profile');
   if (!isGuide && !P.validProfile(rawProfile)) { location.replace('page1_guide.html'); return; }
   const profile = P.normalizeProfile(rawProfile);
@@ -21,20 +21,19 @@
   }
   const options = items => items.map(value => ({ value, label: value }));
   const goalOptions = options(P.GOALS).map(item => ({ ...item, label: item.value === '营养均衡' ? '营养均衡（默认）' : item.label }));
-  const contextQuestion = context.source === 'recommendation' ? `已向您推荐「${context.dish}」，这顿想换换口味吗？` : context.source === 'meal' ? `上一顿您吃了「${context.dish}」，这顿想换换口味吗？` : '这顿想换换口味吗？';
   const guideSteps = [
-    { key: 'goal', short: '目标', lead: '吃好每一顿，', title: '从小目标开始', icon: 'i-veg', question: '最近吃饭主要顾及哪一方面？', hint: '选一项作为小目标，之后可以随时更改。', choices: goalOptions },
-    { key: 'tastes', short: '口味', lead: '下一顿，', title: '更合你的口味', icon: 'i-noodle', question: '平时口味更偏向哪一边？', hint: '可以多选，也可以选“无特别倾向”。', multiple: true, none: '无特别倾向', choices: options(P.TASTES) },
-    { key: 'restrictions', short: '忌口', lead: '先记住，', title: '哪些要避开', icon: 'i-veg', question: '有没有忌口或过敏？', hint: '可以多选。选“其他”还能补充填写。', multiple: true, none: '无', other: true, choices: options(P.RESTRICTIONS) },
-    { key: 'spiceLevel', short: '辣度', lead: '一点点辣，', title: '还是再辣一点', icon: 'i-chili', question: '有多能吃辣？', hint: '选一个平时能接受的辣度，也可以先跳过。', choices: options(P.SPICE_LEVELS) },
-    { key: 'budgetRange', short: '预算', lead: '这顿的预算，', title: '由你来定', icon: 'i-wallet', question: '一顿饭的预算大致在？', hint: '作为默认预算，每顿决定前都可以修改。', choices: P.BUDGETS },
-    { key: 'appetite', short: '饭量', lead: '最后一步，', title: '了解你的饭量', icon: 'i-rice', question: '饭量怎么样？', hint: '选一个更接近平时饭量的答案。', choices: options(P.APPETITES) }
+    { key: 'goal', short: '目标', lead: '吃好每一顿，', title: '从小目标开始', icon: 'i-pen', question: '最近吃饭主要顾及哪一方面？', choices: goalOptions },
+    { key: 'tastes', short: '口味', lead: '下一顿，', title: '更合你的口味', icon: 'i-noodle', question: '平时口味更偏向哪一边？', multiple: true, none: '无特别倾向', choices: options(P.TASTES) },
+    { key: 'restrictions', short: '忌口', lead: '先记住，', title: '哪些要避开', icon: 'i-veg', question: '有没有忌口或过敏？', multiple: true, none: '无', other: true, choices: options(P.RESTRICTIONS) },
+    { key: 'spiceLevel', short: '辣度', lead: '一点点辣，', title: '还是再辣一点', icon: 'i-chili', question: '有多能吃辣？', choices: options(P.SPICE_LEVELS) },
+    { key: 'budgetRange', short: '预算', lead: '这顿的预算，', title: '由你来定', icon: 'i-wallet', question: '一顿饭的预算大致在？', choices: P.BUDGETS },
+    { key: 'appetite', short: '饭量', lead: '最后一步，', title: '了解你的饭量', icon: 'i-ruler', question: '饭量怎么样？', choices: options(P.APPETITES) }
   ];
   const askSteps = [
-    { key: 'mood', short: '在意', lead: '这一顿，', title: '先听你的想法', icon: 'i-bolt', question: '这一顿最在意什么？', hint: '选一个方向就好，没特别想法也可以。', choices: options(['吃点好的', '速战速决', '清淡一点', '无所谓']).map(item => ({ ...item, label: item.value === '无所谓' ? '无所谓（默认）' : item.label })) },
-    { key: 'direction', short: '想吃', lead: '今天，', title: '想吃哪一类？', icon: 'i-noodle', question: '想吃哪一类？', hint: '暂时没有想法也没关系。', choices: options(['米粉面', '盖饭简餐', '地方菜系', '汉堡披萨', '特色小吃', '暂无想法']).map(item => ({ ...item, label: item.value === '暂无想法' ? '暂无想法（默认）' : item.label })) },
-    { key: 'budgetRange', short: '预算', lead: '这一顿，', title: '花得刚刚好', icon: 'i-wallet', question: '这顿饭的预算大致在？', hint: `默认沿用你的档案：${P.BUDGETS.find(item => item.value === profile.budgetRange).label}。临时修改只影响这一顿。`, choices: P.BUDGETS },
-    { key: 'changeTaste', short: '换口味', lead: '换个口味，', title: '还是照旧喜欢', icon: 'i-veg', question: contextQuestion, hint: context.source === 'none' ? '还没有上一顿记录，你也可以直接选择。' : '结合这一次的想法，让下一顿有所不同。', choices: [{ value: 'yes', label: '好' }, { value: 'no', label: '不啦' }] }
+    { key: 'mood', short: '在意', lead: '这一顿，', title: '先听你的想法', icon: 'i-bolt', question: '这一顿最在意什么？', choices: options(['吃点好的', '速战速决', '清淡一点', '无所谓']).map(item => ({ ...item, label: item.value === '无所谓' ? '无所谓（默认）' : item.label })) },
+    { key: 'direction', short: '想吃', lead: '今天，', title: '想吃哪一类？', icon: 'i-noodle', question: '想吃哪一类？', choices: options(['米粉面', '盖饭简餐', '地方菜系', '汉堡披萨', '特色小吃', '暂无想法']).map(item => ({ ...item, label: item.value === '暂无想法' ? '暂无想法（默认）' : item.label })) },
+    { key: 'budgetRange', short: '预算', lead: '这一顿，', title: '花得刚刚好', icon: 'i-wallet', question: '这顿饭的预算大致在？', choices: P.BUDGETS },
+    { key: 'changeTaste', short: '换口味', lead: '这一顿，', title: '换换口味也好', icon: 'i-veg', question: '这顿想换个口味吗？', choices: [{ value: 'yes', label: '换个口味' }, { value: 'no', label: '按平时口味' }] }
   ];
   const steps = isGuide ? guideSteps : askSteps;
   let step = 0;
@@ -44,7 +43,17 @@
   const progress = $('progress');
   for (const [index, item] of steps.entries()) {
     const li = document.createElement('li');
-    li.textContent = `${String(index + 1).padStart(2, '0')} ${item.short}`;
+    const label = `${String(index + 1).padStart(2, '0')} ${item.short}`;
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.textContent = label;
+    button.setAttribute('aria-controls', 'preference-form');
+    button.addEventListener('click', () => {
+      if (index === step || !validate()) return;
+      step = index;
+      render();
+    });
+    li.append(button);
     progress.append(li);
   }
   function clearError() { $('form-error').hidden = true; $('form-error').textContent = ''; }
@@ -97,22 +106,22 @@
     const current = steps[step];
     progress.querySelectorAll('li').forEach((item, index) => {
       item.className = index === step ? 'current' : index < step ? 'done' : '';
-      if (index === step) item.setAttribute('aria-current', 'step'); else item.removeAttribute('aria-current');
+      const control = item.querySelector('button') || item;
+      if (index === step) control.setAttribute('aria-current', 'step'); else control.removeAttribute('aria-current');
     });
     $('step-caption').textContent = `${isGuide ? '个人档案' : '问一问这一顿'} · ${step + 1} / ${steps.length}`;
     title(current.lead, current.title);
     $('step-art').setAttribute('href', `#${current.icon}`);
-    $('question').textContent = current.question;
-    $('question-hint').textContent = current.hint;
+    $('question').textContent = current.question + (current.multiple ? '（多选）' : '');
     const allChoices = [...current.choices];
     if (current.none) allChoices.push({ value: '__none__', label: current.none });
-    if (current.other) allChoices.push({ value: '__other__', label: '其他（自填）' });
+    if (current.other) allChoices.push({ value: '__other__', label: '其他' });
     $('choices').replaceChildren(...allChoices.map(item => makeChoice(item, current)));
     $('other-field').hidden = !current.other || !otherEnabled;
     $('restriction-other').value = otherText;
     $('back').hidden = step === 0;
     $('back').textContent = '上一步';
-    $('next').textContent = step === steps.length - 1 ? isGuide ? returningToProfile ? '保存个人档案 →' : '完成，去问一问 →' : '看看推荐 →' : '下一步 →';
+    $('next').textContent = step === steps.length - 1 ? isGuide ? returningToProfile ? '保存个人档案 →' : '完成，去首页 →' : '看看推荐 →' : '下一步 →';
     $('skip-step').textContent = '跳过这一步 →';
     document.querySelector('.page').scrollTop = 0;
     if (moveFocus) $('step-title').focus({ preventScroll: true });

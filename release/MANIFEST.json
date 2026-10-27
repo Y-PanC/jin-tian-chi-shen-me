@@ -1,0 +1,208 @@
+{
+  "name": "今天吃什么",
+  "version": "1.0.0",
+  "releaseDate": "2026-10-25",
+  "timezone": "Asia/Shanghai",
+  "gitTag": "v1.0.0",
+  "sourceCommit": "7546c1f093682ba4d7f880d7a3d1b2b1bc71741f",
+  "previewUrl": "http://127.0.0.1:5174/",
+  "developmentUrl": "http://127.0.0.1:5173/",
+  "entrypoint": "mobile-web/dist/index.html",
+  "testCount": 19,
+  "testStatus": "passed",
+  "projectMaterials": [
+    "今天吃什么.xlsx",
+    "今天吃什么_设计规范_v1.md",
+    "首页生成提示词.md"
+  ],
+  "files": {
+    "SOURCE_COMMIT.txt": {
+      "bytes": 41,
+      "sha256": "85641402b75b623611f6222c5e1fc098c043e998df89fa38706ab98ee971febb"
+    },
+    "mobile-web/README.md": {
+      "bytes": 3566,
+      "sha256": "d71be626817f71556e830deca1216aa3f0be120d86d159e70f83408c60f5b38e"
+    },
+    "mobile-web/VERSION": {
+      "bytes": 6,
+      "sha256": "59854984853104df5c353e2f681a15fc7924742f9a2e468c29af248dce45ce03"
+    },
+    "mobile-web/dist/assets/app.css": {
+      "bytes": 10239,
+      "sha256": "61a4156ff4f61ff7d3ae5950012f0f40847d3af380c473401851d7305e2c62b3"
+    },
+    "mobile-web/dist/assets/data/decision-table.json": {
+      "bytes": 674,
+      "sha256": "bfe431c9cf707d123287844d05efaa6513d031c2c33bc8050f4b14392525fcc3"
+    },
+    "mobile-web/dist/assets/data/meal-seed-v3.js": {
+      "bytes": 9049,
+      "sha256": "f4f02c2b23179ae68f6d05c28129b50f71c27bde86d7c61bb74e37d6ae45af53"
+    },
+    "mobile-web/dist/assets/data/menu.json": {
+      "bytes": 8017,
+      "sha256": "32bfd646b2aa9f4c66b599260bcfd24c72f8901a3be6ad7c2dc481d4c915f29f"
+    },
+    "mobile-web/dist/assets/domain.js": {
+      "bytes": 7849,
+      "sha256": "022946dff2603871e53525f31777d808ee0fbb551fd1238ffce2bfdf4c7fc7b6"
+    },
+    "mobile-web/dist/assets/home.js": {
+      "bytes": 3469,
+      "sha256": "c5008620449772e6cb048effc3e984ebc89686bc4647b262ce3c7bd1f7684e05"
+    },
+    "mobile-web/dist/assets/journal.css": {
+      "bytes": 13735,
+      "sha256": "36b6d12255be60635db199cfbffdda419f157eccaea357c1f191b27b6f53cc79"
+    },
+    "mobile-web/dist/assets/journal.js": {
+      "bytes": 7916,
+      "sha256": "84947ed90076302932813238e014d1dd31854215172bf30683a545fb74730bdb"
+    },
+    "mobile-web/dist/assets/knowledge-deck.js": {
+      "bytes": 1001,
+      "sha256": "d70bafe451060039e860a00286f656c530feec686d138ed7c861984cb0e59c11"
+    },
+    "mobile-web/dist/assets/log.js": {
+      "bytes": 9129,
+      "sha256": "77c9b9bd799c3a2563d2d38944d59bb568222e12f155d598bcfe98b5191fb7d0"
+    },
+    "mobile-web/dist/assets/preference-flow.js": {
+      "bytes": 12374,
+      "sha256": "e8641ae091128d770fd396f58f0c56f14abec80aa50da7c8a4132533623d323b"
+    },
+    "mobile-web/dist/assets/preferences.js": {
+      "bytes": 4482,
+      "sha256": "bd4f9d0388ca6b1d6de1d8dba5464aa1cb36000a1cdf48fa5f407ebf0e13aa2e"
+    },
+    "mobile-web/dist/assets/profile.js": {
+      "bytes": 6461,
+      "sha256": "4d36c6a668a3040331529eb340d6296df1cfef07156d6f3fc826b00ed3cbd325"
+    },
+    "mobile-web/dist/assets/result.js": {
+      "bytes": 4225,
+      "sha256": "94f45e192bd344a069a10b3610a8df4b221184c310eed8b06259c4a43c941b55"
+    },
+    "mobile-web/dist/assets/services.js": {
+      "bytes": 4019,
+      "sha256": "775f684016e2a02527bec968ca0a49feb852ee637d171ac3e4d10f9c24220d31"
+    },
+    "mobile-web/dist/assets/settings.js": {
+      "bytes": 1688,
+      "sha256": "27caf4f36bffb6da02654d3ec89d29f9d02f9604a004b497f1517cd3c656f5af"
+    },
+    "mobile-web/dist/index.html": {
+      "bytes": 719,
+      "sha256": "babc2737ae9866aa59d168fe1b83ced9aebe2773cb78930a5c7a0b088670a1f3"
+    },
+    "mobile-web/dist/page0_home_old_user.html": {
+      "bytes": 16345,
+      "sha256": "67f3d6b5110f0a779f5dceb123776c3ea2eaa9d61a3202847e76a4a1ffaedb0e"
+    },
+    "mobile-web/dist/page1_guide.html": {
+      "bytes": 14541,
+      "sha256": "f2383776c09dd691e145cdabfe11d9d0815e312df8ad075634e1680d4af9583f"
+    },
+    "mobile-web/dist/page2_ask.html": {
+      "bytes": 13228,
+      "sha256": "5f7729cecba40f348387ea9cae046b6f3fc63f8655577a61dbaf45145e662dd7"
+    },
+    "mobile-web/dist/page3_result.html": {
+      "bytes": 5022,
+      "sha256": "27eb24597ca8de18d1c319c9a200f033e47b9f8c16ea67b12a307ec2418774f2"
+    },
+    "mobile-web/dist/page4_log.html": {
+      "bytes": 3888,
+      "sha256": "e705f3b1f6668d39667c1451577b888b8e4aa73410c511ff175fb8929b33a2e9"
+    },
+    "mobile-web/dist/page5_profile.html": {
+      "bytes": 4011,
+      "sha256": "e2e1ddc630707e13fc03850e79a0cba2602f0e621325de5dbcbb71376aa0bd19"
+    },
+    "mobile-web/dist/page6_settings.html": {
+      "bytes": 4613,
+      "sha256": "2f12922dc41be2e0314d1688ab5ef323097e82550fa9918882dfab563e4e41c9"
+    },
+    "mobile-web/dist/restart_guide.html": {
+      "bytes": 2759,
+      "sha256": "b36f8e8768acaa44ecf4c1085c828f161d502898a68f6601f563f15035ab3133"
+    },
+    "mobile-web/dist/version.json": {
+      "bytes": 118,
+      "sha256": "278af80e51e85f526e0eb2ae2d321cd57e4790f4bf6705f6e476ed08812cc16c"
+    },
+    "mobile-web/docs/health-knowledge-sources.md": {
+      "bytes": 1135,
+      "sha256": "907a8b5491dd121dfa74744b7de968696616a441a8a4a2ae2fc8f1b6556dd818"
+    },
+    "mobile-web/docs/interface-contracts.md": {
+      "bytes": 4670,
+      "sha256": "e18bfc4094045616de31ec59f7c380a8d1a9f497c6dbf5c51ca0bba8257034b3"
+    },
+    "mobile-web/docs/meal-seed-sources.md": {
+      "bytes": 1026,
+      "sha256": "3adb578bd4e12a17b4dcd0942c070e137883ec1e26f49ac8817392d09be429ed"
+    },
+    "mobile-web/docs/recommendation-rules.md": {
+      "bytes": 2552,
+      "sha256": "a2b77e968e6a8fa9d95faee13fb5f8f2446ef154bbf57249b7c5e753dbbd06f5"
+    },
+    "mobile-web/docs/releases/v1.0.0.md": {
+      "bytes": 2568,
+      "sha256": "d1fc23057e9b432cb9a71d84ea6d94afa32ac076737a06f06522a16f9d094aa4"
+    },
+    "mobile-web/package.json": {
+      "bytes": 162,
+      "sha256": "fa2b4391dc9f6af3b48c27df65b642f33d85ce291c0cc59214bbf60e69620963"
+    },
+    "mobile-web/tests/domain.test.mjs": {
+      "bytes": 5160,
+      "sha256": "ffeb749a94398682651594383c365c2e5c506852ea6210ae49ae9c2b3c23e1d0"
+    },
+    "mobile-web/tests/journal.test.mjs": {
+      "bytes": 4674,
+      "sha256": "20e0545c03b5c7d9be15175b23467416934abea181d9414f19ee7fa8e8e5e30f"
+    },
+    "mobile-web/tests/knowledge.test.mjs": {
+      "bytes": 2060,
+      "sha256": "bfa603c23ae5a37e421ee5e723e9b0a55e7bed47434b377c6afbcdcb82d0abef"
+    },
+    "mobile-web/tests/storage.test.mjs": {
+      "bytes": 1899,
+      "sha256": "0675af0a774ca917addae2505716c2ea692f998bbed63a2666c0216d6fcbfdc9"
+    },
+    "启动本地预览.command": {
+      "bytes": 1435,
+      "sha256": "61f0b9aa8eb7e95a9d5c9d5a0908e9c9fc188526ed223cd092577a6e5cf8a0ee"
+    },
+    "校验版本.py": {
+      "bytes": 1011,
+      "sha256": "7478fafeb082d3a1d61987d89d68aec9780ad2878b3befb01bd1586decd5dd86"
+    },
+    "版本说明.md": {
+      "bytes": 1922,
+      "sha256": "2b34d5b8b82975cd6a16e887b1c1d5b156563b09be5a42e56b8d3f4ba813935b"
+    },
+    "项目资料/今天吃什么.xlsx": {
+      "bytes": 28016,
+      "sha256": "a80238b86e7ad922fbc1c6f4ea744f0ea1e69b348b4ba9573585b2229c95a0d1"
+    },
+    "项目资料/今天吃什么_设计规范_v1.md": {
+      "bytes": 15183,
+      "sha256": "1d10d207ccbba190e8e70858c76bc762e6fe8b89a957e428afa214dfd787f2d8"
+    },
+    "项目资料/首页生成提示词.md": {
+      "bytes": 5342,
+      "sha256": "87b4d5446cb6c85a04d9faedb7656c807d48232dc87cc9083f0b3e0e66395f4a"
+    },
+    "预览图/首页.png": {
+      "bytes": 28568,
+      "sha256": "0c0013427566833e445ac0da5911118f75fa7bd1c415d1c420118c6bf6732342"
+    },
+    "验证记录.txt": {
+      "bytes": 1994,
+      "sha256": "6f287f434e7e4ca1fbffd6f5b78576303eb41eabf7519f77d400a5c613e7c01a"
+    }
+  }
+}

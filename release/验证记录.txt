@@ -1,0 +1,32 @@
+今天吃什么 v1.0.0
+定版日期：2026-10-25
+源码提交：7546c1f093682ba4d7f880d7a3d1b2b1bc71741f
+命令：node --test tests/*.test.mjs
+
+✔ every declared decision-table ID exists and has complete fields (0.83225ms)
+✔ all supported combinations return two disjoint batches within hard constraints (126.51ms)
+✔ the demo chain excludes the salty previous meal and cites its actual record (0.667667ms)
+✔ free-text custom restrictions and impossible budgets do not bypass exclusions (0.172792ms)
+✔ photo, voice and text adapters can share parsing; user corrections override inferred tags (0.729375ms)
+✔ backdated edits do not become the latest eaten meal; portrait counts confirmed tags once (0.708292ms)
+✔ a real saved meal takes precedence over a stale recommendation in the ask question (4.067084ms)
+✔ V7 journals and existing structured records share one lossless log source (9.350416ms)
+✔ recommendations use the last V7 journal and its inferred taste (10.301ms)
+✔ samples only initialize an untouched browser and never return after clearing (3.017375ms)
+✔ settings merge independently from business preferences and keep extra fields (0.40625ms)
+✔ bad dates, corrupt storage and negated tastes are handled without invented facts (0.870125ms)
+✔ knowledge covers every card before repeating and keeps consecutive batches disjoint (25.853792ms)
+✔ random batches mix cards rather than retaining fixed groups (0.414ms)
+✔ knowledge tolerates stale history and a small or empty card pool (0.656083ms)
+✔ saving and editing one meal preserves its identity instead of duplicating it (11.968916ms)
+✔ invalid stored data is preserved and save failures remain explicit (0.191375ms)
+✔ blank names and future timestamps are rejected before storage changes (0.123083ms)
+✔ legacy records without dates do not invent a meal time or period (0.6325ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 219.240541
