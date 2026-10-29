@@ -1,0 +1,938 @@
+{
+  "schemaVersion": 1,
+  "datasetId": "yunzhong-demo-20261029",
+  "description": "经授权公开的演示账号与饮食记录快照；仅用于测试和汇报",
+  "username": "Yunzhong",
+  "password": "1234567890",
+  "profile": {
+    "goal": "营养均衡",
+    "spiceLevel": "辣",
+    "budgetRange": "15to25",
+    "appetite": "一般水平",
+    "tastes": [
+      "清淡"
+    ],
+    "restrictions": [
+      "内脏",
+      "羊肉"
+    ],
+    "budget": 25,
+    "onboardingCompleted": true,
+    "schemaVersion": 2
+  },
+  "settings": {
+    "nickname": "Yunzhong",
+    "userId": "Yunzhong",
+    "photoInputEnabled": true,
+    "voiceInputEnabled": true
+  },
+  "meals": [
+    {
+      "key": "meal-001",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "番茄鸡蛋面"
+        ],
+        "dish": "番茄鸡蛋面",
+        "dish_name": "番茄鸡蛋面",
+        "text": "番茄鸡蛋面",
+        "tags": [
+          "清淡",
+          "主食为主"
+        ],
+        "remarks": "",
+        "photos": [],
+        "eatenAt": "2026-10-26T14:23:00.000Z",
+        "loggedAt": "2026-10-26T14:23:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "夜宵",
+        "inputMethod": "text",
+        "source": "text",
+        "shop": "面面俱到",
+        "category": "米粉面",
+        "price": 14,
+        "createdAt": "2026-10-26T14:23:28.907Z",
+        "updatedAt": "2026-10-26T14:23:28.907Z"
+      }
+    },
+    {
+      "key": "meal-002",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "冬瓜肉丸汤配饭"
+        ],
+        "dish": "冬瓜肉丸汤配饭",
+        "dish_name": "冬瓜肉丸汤配饭",
+        "text": "冬瓜肉丸汤配饭",
+        "tags": [
+          "清淡",
+          "荤素搭配"
+        ],
+        "remarks": "",
+        "photos": [],
+        "eatenAt": "2026-10-26T14:03:00.000Z",
+        "loggedAt": "2026-10-26T14:03:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "夜宵",
+        "inputMethod": "text",
+        "source": "text",
+        "shop": "一口江南",
+        "category": "地方菜系",
+        "price": 20,
+        "createdAt": "2026-10-26T14:04:02.753Z",
+        "updatedAt": "2026-10-26T14:04:02.753Z"
+      }
+    },
+    {
+      "key": "meal-003",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "猪肉白菜水饺"
+        ],
+        "dish": "猪肉白菜水饺",
+        "dish_name": "猪肉白菜水饺",
+        "text": "猪肉白菜水饺",
+        "tags": [
+          "荤素搭配"
+        ],
+        "remarks": "",
+        "photos": [],
+        "eatenAt": "2026-10-26T13:59:00.000Z",
+        "loggedAt": "2026-10-26T13:59:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "shop": "饺子小馆",
+        "category": "特色小吃",
+        "price": 22,
+        "createdAt": "2026-10-26T13:59:02.989Z",
+        "updatedAt": "2026-10-26T13:59:02.989Z"
+      }
+    },
+    {
+      "key": "meal-004",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "黄焖鸡"
+        ],
+        "dish": "黄焖鸡",
+        "dish_name": "黄焖鸡",
+        "text": "10/23 12:35 午餐：黄焖鸡、米饭，偏咸，少酱",
+        "tags": [
+          "偏咸"
+        ],
+        "remarks": "10/23 12:35 午餐：黄焖鸡、米饭，偏咸，少酱",
+        "photos": [],
+        "eatenAt": "2026-10-23T04:35:00.000Z",
+        "loggedAt": "2026-10-23T04:35:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "10/23 12:35 午餐：黄焖鸡、米饭，偏咸，少酱",
+        "originalSource": "text",
+        "createdAt": "2026-10-25T10:13:29.931Z",
+        "updatedAt": "2026-10-25T10:13:29.931Z"
+      }
+    },
+    {
+      "key": "meal-005",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "桂林卤菜粉"
+        ],
+        "dish": "桂林卤菜粉",
+        "dish_name": "桂林卤菜粉",
+        "text": "我早上吃桂林卤菜粉，加酸豆角，卤香挺足。",
+        "tags": [
+          "偏酸"
+        ],
+        "remarks": "我早上吃桂林卤菜粉，加酸豆角，卤香挺足。",
+        "photos": [],
+        "eatenAt": "2026-10-23T00:05:00.000Z",
+        "loggedAt": "2026-10-23T00:05:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "早餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我早上吃桂林卤菜粉，加酸豆角，卤香挺足。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HW-001",
+        "createdAt": "2026-10-25T10:13:29.933Z",
+        "updatedAt": "2026-10-25T10:13:29.933Z"
+      }
+    },
+    {
+      "key": "meal-006",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "黄焖鸡米饭"
+        ],
+        "dish": "黄焖鸡米饭",
+        "dish_name": "黄焖鸡米饭",
+        "text": "黄焖鸡米饭",
+        "tags": [
+          "偏咸"
+        ],
+        "remarks": "我晚饭点黄焖鸡米饭，酱香够，汤汁稍咸。",
+        "photos": [],
+        "eatenAt": "2026-10-22T11:00:00.000Z",
+        "loggedAt": "2026-10-22T11:00:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭点黄焖鸡米饭，酱香够，汤汁稍咸。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "LH-001",
+        "createdAt": "2026-10-25T10:13:29.873Z",
+        "updatedAt": "2026-10-25T10:13:29.873Z"
+      }
+    },
+    {
+      "key": "meal-007",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "麻辣烫"
+        ],
+        "dish": "麻辣烫",
+        "dish_name": "麻辣烫",
+        "text": "我中午吃自选麻辣烫，选牛肉、豆腐和青菜，微辣。",
+        "tags": [
+          "偏辣"
+        ],
+        "remarks": "我中午吃自选麻辣烫，选牛肉、豆腐和青菜，微辣。",
+        "photos": [],
+        "eatenAt": "2026-10-22T04:20:00.000Z",
+        "loggedAt": "2026-10-22T04:20:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午吃自选麻辣烫，选牛肉、豆腐和青菜，微辣。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "ZL-001",
+        "createdAt": "2026-10-25T10:13:29.934Z",
+        "updatedAt": "2026-10-25T10:13:29.934Z"
+      }
+    },
+    {
+      "key": "meal-008",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "鸡肉锅仔"
+        ],
+        "dish": "鸡肉锅仔",
+        "dish_name": "鸡肉锅仔",
+        "text": "我晚饭在丽娃食堂吃鸡肉锅仔，热乎，口味咸鲜。",
+        "tags": [
+          "偏咸",
+          "鲜香"
+        ],
+        "remarks": "我晚饭在丽娃食堂吃鸡肉锅仔，热乎，口味咸鲜。",
+        "photos": [],
+        "eatenAt": "2026-10-21T11:10:00.000Z",
+        "loggedAt": "2026-10-21T11:10:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭在丽娃食堂吃鸡肉锅仔，热乎，口味咸鲜。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "LW05",
+        "createdAt": "2026-10-25T10:13:29.935Z",
+        "updatedAt": "2026-10-25T10:13:29.935Z"
+      }
+    },
+    {
+      "key": "meal-009",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "照烧鸡腿饭"
+        ],
+        "dish": "照烧鸡腿饭",
+        "dish_name": "照烧鸡腿饭",
+        "text": "我中午点照烧鸡腿饭，出餐快，酱汁偏甜。",
+        "tags": [
+          "偏甜"
+        ],
+        "remarks": "我中午点照烧鸡腿饭，出餐快，酱汁偏甜。",
+        "photos": [],
+        "eatenAt": "2026-10-21T04:05:00.000Z",
+        "loggedAt": "2026-10-21T04:05:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午点照烧鸡腿饭，出餐快，酱汁偏甜。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "TA-09",
+        "createdAt": "2026-10-25T10:13:29.935Z",
+        "updatedAt": "2026-10-25T10:13:29.935Z"
+      }
+    },
+    {
+      "key": "meal-010",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "猪肉白菜水饺"
+        ],
+        "dish": "猪肉白菜水饺",
+        "dish_name": "猪肉白菜水饺",
+        "text": "我晚饭吃猪肉白菜水饺，家常，分量刚好。",
+        "tags": [],
+        "remarks": "我晚饭吃猪肉白菜水饺，家常，分量刚好。",
+        "photos": [],
+        "eatenAt": "2026-10-20T11:15:00.000Z",
+        "loggedAt": "2026-10-20T11:15:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭吃猪肉白菜水饺，家常，分量刚好。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "TA-10",
+        "createdAt": "2026-10-25T10:13:29.936Z",
+        "updatedAt": "2026-10-25T10:13:29.936Z"
+      }
+    },
+    {
+      "key": "meal-011",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "鸡肉盖浇饭"
+        ],
+        "dish": "鸡肉盖浇饭",
+        "dish_name": "鸡肉盖浇饭",
+        "text": "我午餐在河东食堂吃鸡肉盖浇饭，方便省时。",
+        "tags": [],
+        "remarks": "我午餐在河东食堂吃鸡肉盖浇饭，方便省时。",
+        "photos": [],
+        "eatenAt": "2026-10-20T04:00:00.000Z",
+        "loggedAt": "2026-10-20T04:00:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我午餐在河东食堂吃鸡肉盖浇饭，方便省时。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HD01",
+        "createdAt": "2026-10-25T10:13:29.937Z",
+        "updatedAt": "2026-10-25T10:13:29.937Z"
+      }
+    },
+    {
+      "key": "meal-012",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "炸鸡"
+        ],
+        "dish": "炸鸡",
+        "dish_name": "炸鸡",
+        "text": "我晚上吃炸鸡套餐，外皮脆，稍微有点油。",
+        "tags": [],
+        "remarks": "我晚上吃炸鸡套餐，外皮脆，稍微有点油。",
+        "photos": [],
+        "eatenAt": "2026-10-19T11:20:00.000Z",
+        "loggedAt": "2026-10-19T11:20:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚上吃炸鸡套餐，外皮脆，稍微有点油。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "TA-08",
+        "createdAt": "2026-10-25T10:13:29.937Z",
+        "updatedAt": "2026-10-25T10:13:29.937Z"
+      }
+    },
+    {
+      "key": "meal-013",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "鸡蛋炒饭"
+        ],
+        "dish": "鸡蛋炒饭",
+        "dish_name": "鸡蛋炒饭",
+        "text": "我中午吃鸡蛋炒饭，简单顶饱。",
+        "tags": [],
+        "remarks": "我中午吃鸡蛋炒饭，简单顶饱。",
+        "photos": [],
+        "eatenAt": "2026-10-19T04:15:00.000Z",
+        "loggedAt": "2026-10-19T04:15:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午吃鸡蛋炒饭，简单顶饱。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "LW01",
+        "createdAt": "2026-10-25T10:13:29.938Z",
+        "updatedAt": "2026-10-25T10:13:29.938Z"
+      }
+    },
+    {
+      "key": "meal-014",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "桂林卤菜粉"
+        ],
+        "dish": "桂林卤菜粉",
+        "dish_name": "桂林卤菜粉",
+        "text": "我晚饭又吃桂林卤菜粉，加酸豆角，整体偏咸。",
+        "tags": [
+          "偏咸",
+          "偏酸"
+        ],
+        "remarks": "我晚饭又吃桂林卤菜粉，加酸豆角，整体偏咸。",
+        "photos": [],
+        "eatenAt": "2026-10-18T11:05:00.000Z",
+        "loggedAt": "2026-10-18T11:05:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭又吃桂林卤菜粉，加酸豆角，整体偏咸。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HW-001",
+        "createdAt": "2026-10-25T10:13:29.939Z",
+        "updatedAt": "2026-10-25T10:13:29.939Z"
+      }
+    },
+    {
+      "key": "meal-015",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "小锅牛肉饭"
+        ],
+        "dish": "小锅牛肉饭",
+        "dish_name": "小锅牛肉饭",
+        "text": "我午餐吃河西小锅牛肉饭，热乎家常。",
+        "tags": [],
+        "remarks": "我午餐吃河西小锅牛肉饭，热乎家常。",
+        "photos": [],
+        "eatenAt": "2026-10-18T04:10:00.000Z",
+        "loggedAt": "2026-10-18T04:10:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我午餐吃河西小锅牛肉饭，热乎家常。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HX02",
+        "createdAt": "2026-10-25T10:13:29.939Z",
+        "updatedAt": "2026-10-25T10:13:29.939Z"
+      }
+    },
+    {
+      "key": "meal-016",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "咖喱鸡肉饭"
+        ],
+        "dish": "咖喱鸡肉饭",
+        "dish_name": "咖喱鸡肉饭",
+        "text": "我晚饭在丽娃食堂吃咖喱鸡肉饭，香料味足，带一点甜。",
+        "tags": [
+          "偏甜"
+        ],
+        "remarks": "我晚饭在丽娃食堂吃咖喱鸡肉饭，香料味足，带一点甜。",
+        "photos": [],
+        "eatenAt": "2026-10-17T11:00:00.000Z",
+        "loggedAt": "2026-10-17T11:00:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭在丽娃食堂吃咖喱鸡肉饭，香料味足，带一点甜。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "LW04",
+        "createdAt": "2026-10-25T10:13:29.940Z",
+        "updatedAt": "2026-10-25T10:13:29.940Z"
+      }
+    },
+    {
+      "key": "meal-017",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "小锅豆腐菜饭"
+        ],
+        "dish": "小锅豆腐菜饭",
+        "dish_name": "小锅豆腐菜饭",
+        "text": "我中午吃河东小锅豆腐菜饭，咸鲜下饭。",
+        "tags": [
+          "偏咸",
+          "鲜香"
+        ],
+        "remarks": "我中午吃河东小锅豆腐菜饭，咸鲜下饭。",
+        "photos": [],
+        "eatenAt": "2026-10-17T04:25:00.000Z",
+        "loggedAt": "2026-10-17T04:25:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午吃河东小锅豆腐菜饭，咸鲜下饭。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HD02",
+        "createdAt": "2026-10-25T10:13:29.941Z",
+        "updatedAt": "2026-10-25T10:13:29.941Z"
+      }
+    },
+    {
+      "key": "meal-018",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "黄焖鸡米饭"
+        ],
+        "dish": "黄焖鸡米饭",
+        "dish_name": "黄焖鸡米饭",
+        "text": "我晚上再点黄焖鸡米饭，鸡肉入味，今天觉得有点腻。",
+        "tags": [],
+        "remarks": "我晚上再点黄焖鸡米饭，鸡肉入味，今天觉得有点腻。",
+        "photos": [],
+        "eatenAt": "2026-10-16T11:10:00.000Z",
+        "loggedAt": "2026-10-16T11:10:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚上再点黄焖鸡米饭，鸡肉入味，今天觉得有点腻。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "LH-001",
+        "createdAt": "2026-10-25T10:13:29.941Z",
+        "updatedAt": "2026-10-25T10:13:29.941Z"
+      }
+    },
+    {
+      "key": "meal-019",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "馄饨"
+        ],
+        "dish": "馄饨",
+        "dish_name": "馄饨",
+        "text": "我中午吃了馄饨，热汤简单，赶课刚好。",
+        "tags": [],
+        "remarks": "我中午吃了馄饨，热汤简单，赶课刚好。",
+        "photos": [],
+        "eatenAt": "2026-10-16T04:00:00.000Z",
+        "loggedAt": "2026-10-16T04:00:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午吃了馄饨，热汤简单，赶课刚好。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HX03",
+        "createdAt": "2026-10-25T10:13:29.942Z",
+        "updatedAt": "2026-10-25T10:13:29.942Z"
+      }
+    },
+    {
+      "key": "meal-020",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "番茄汤底麻辣烫"
+        ],
+        "dish": "番茄汤底麻辣烫",
+        "dish_name": "番茄汤底麻辣烫",
+        "text": "我晚饭选番茄汤底麻辣烫，配菌菇和青菜，酸甜温和。",
+        "tags": [
+          "偏辣",
+          "偏甜",
+          "偏酸"
+        ],
+        "remarks": "我晚饭选番茄汤底麻辣烫，配菌菇和青菜，酸甜温和。",
+        "photos": [],
+        "eatenAt": "2026-10-15T11:25:00.000Z",
+        "loggedAt": "2026-10-15T11:25:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭选番茄汤底麻辣烫，配菌菇和青菜，酸甜温和。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "ZL-002",
+        "createdAt": "2026-10-25T10:13:29.943Z",
+        "updatedAt": "2026-10-25T10:13:29.943Z"
+      }
+    },
+    {
+      "key": "meal-021",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "水饺"
+        ],
+        "dish": "水饺",
+        "dish_name": "水饺",
+        "text": "我中午吃水饺，猪肉白菜馅，蘸醋合口。",
+        "tags": [],
+        "remarks": "我中午吃水饺，猪肉白菜馅，蘸醋合口。",
+        "photos": [],
+        "eatenAt": "2026-10-15T04:05:00.000Z",
+        "loggedAt": "2026-10-15T04:05:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午吃水饺，猪肉白菜馅，蘸醋合口。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "TA-10",
+        "createdAt": "2026-10-25T10:13:29.943Z",
+        "updatedAt": "2026-10-25T10:13:29.943Z"
+      }
+    },
+    {
+      "key": "meal-022",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "小炒肉套餐"
+        ],
+        "dish": "小炒肉套餐",
+        "dish_name": "小炒肉套餐",
+        "text": "我晚饭在丽娃食堂吃小炒肉套餐，微辣下饭。",
+        "tags": [
+          "偏辣"
+        ],
+        "remarks": "我晚饭在丽娃食堂吃小炒肉套餐，微辣下饭。",
+        "photos": [],
+        "eatenAt": "2026-10-14T11:00:00.000Z",
+        "loggedAt": "2026-10-14T11:00:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭在丽娃食堂吃小炒肉套餐，微辣下饭。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "LW02",
+        "createdAt": "2026-10-25T10:13:29.944Z",
+        "updatedAt": "2026-10-25T10:13:29.944Z"
+      }
+    },
+    {
+      "key": "meal-023",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "照烧鸡腿饭"
+        ],
+        "dish": "照烧鸡腿饭",
+        "dish_name": "照烧鸡腿饭",
+        "text": "我中午点照烧鸡腿饭，方便，口味咸甜。",
+        "tags": [
+          "偏咸",
+          "偏甜"
+        ],
+        "remarks": "我中午点照烧鸡腿饭，方便，口味咸甜。",
+        "photos": [],
+        "eatenAt": "2026-10-14T04:20:00.000Z",
+        "loggedAt": "2026-10-14T04:20:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午点照烧鸡腿饭，方便，口味咸甜。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "TA-09",
+        "createdAt": "2026-10-25T10:13:29.945Z",
+        "updatedAt": "2026-10-25T10:13:29.945Z"
+      }
+    },
+    {
+      "key": "meal-024",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "桂林卤菜粉"
+        ],
+        "dish": "桂林卤菜粉",
+        "dish_name": "桂林卤菜粉",
+        "text": "我晚饭吃桂林卤菜粉，卤香明显。",
+        "tags": [],
+        "remarks": "我晚饭吃桂林卤菜粉，卤香明显。",
+        "photos": [],
+        "eatenAt": "2026-10-13T11:10:00.000Z",
+        "loggedAt": "2026-10-13T11:10:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭吃桂林卤菜粉，卤香明显。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HW-001",
+        "createdAt": "2026-10-25T10:13:29.945Z",
+        "updatedAt": "2026-10-25T10:13:29.945Z"
+      }
+    },
+    {
+      "key": "meal-025",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "自选称重餐"
+        ],
+        "dish": "自选称重餐",
+        "dish_name": "自选称重餐",
+        "text": "我午餐在河西食堂吃自选称重餐，选鱼和青菜，口味清淡。",
+        "tags": [
+          "清淡"
+        ],
+        "remarks": "我午餐在河西食堂吃自选称重餐，选鱼和青菜，口味清淡。",
+        "photos": [],
+        "eatenAt": "2026-10-13T04:00:00.000Z",
+        "loggedAt": "2026-10-13T04:00:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我午餐在河西食堂吃自选称重餐，选鱼和青菜，口味清淡。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HX04",
+        "createdAt": "2026-10-25T10:13:29.946Z",
+        "updatedAt": "2026-10-25T10:13:29.946Z"
+      }
+    },
+    {
+      "key": "meal-026",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "炸鸡"
+        ],
+        "dish": "炸鸡",
+        "dish_name": "炸鸡",
+        "text": "我晚上点炸鸡，外脆里嫩，吃完觉得偏油。",
+        "tags": [
+          "偏油"
+        ],
+        "remarks": "我晚上点炸鸡，外脆里嫩，吃完觉得偏油。",
+        "photos": [],
+        "eatenAt": "2026-10-12T11:05:00.000Z",
+        "loggedAt": "2026-10-12T11:05:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚上点炸鸡，外脆里嫩，吃完觉得偏油。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "TA-08",
+        "createdAt": "2026-10-25T10:13:29.946Z",
+        "updatedAt": "2026-10-25T10:13:29.946Z"
+      }
+    },
+    {
+      "key": "meal-027",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "菌菇汤底麻辣烫"
+        ],
+        "dish": "菌菇汤底麻辣烫",
+        "dish_name": "菌菇汤底麻辣烫",
+        "text": "我午餐吃菌菇汤底麻辣烫，选鸡肉和青菜，味道清鲜。",
+        "tags": [
+          "偏辣",
+          "鲜香"
+        ],
+        "remarks": "我午餐吃菌菇汤底麻辣烫，选鸡肉和青菜，味道清鲜。",
+        "photos": [],
+        "eatenAt": "2026-10-12T04:15:00.000Z",
+        "loggedAt": "2026-10-12T04:15:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我午餐吃菌菇汤底麻辣烫，选鸡肉和青菜，味道清鲜。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "ZL-003",
+        "createdAt": "2026-10-25T10:13:29.947Z",
+        "updatedAt": "2026-10-25T10:13:29.947Z"
+      }
+    },
+    {
+      "key": "meal-028",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "大众菜套餐"
+        ],
+        "dish": "大众菜套餐",
+        "dish_name": "大众菜套餐",
+        "text": "我晚饭在丽娃食堂吃大众菜套餐，鱼和青菜搭配清爽。",
+        "tags": [],
+        "remarks": "我晚饭在丽娃食堂吃大众菜套餐，鱼和青菜搭配清爽。",
+        "photos": [],
+        "eatenAt": "2026-10-11T11:05:00.000Z",
+        "loggedAt": "2026-10-11T11:05:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭在丽娃食堂吃大众菜套餐，鱼和青菜搭配清爽。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "LW03",
+        "createdAt": "2026-10-25T10:13:29.948Z",
+        "updatedAt": "2026-10-25T10:13:29.948Z"
+      }
+    },
+    {
+      "key": "meal-029",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "砂锅米线"
+        ],
+        "dish": "砂锅米线",
+        "dish_name": "砂锅米线",
+        "text": "我中午吃砂锅米线，汤热乎，配料挺足。",
+        "tags": [],
+        "remarks": "我中午吃砂锅米线，汤热乎，配料挺足。",
+        "photos": [],
+        "eatenAt": "2026-10-11T04:10:00.000Z",
+        "loggedAt": "2026-10-11T04:10:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我中午吃砂锅米线，汤热乎，配料挺足。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HX05",
+        "createdAt": "2026-10-25T10:13:29.948Z",
+        "updatedAt": "2026-10-25T10:13:29.948Z"
+      }
+    },
+    {
+      "key": "meal-030",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "三鲜桂林米粉"
+        ],
+        "dish": "三鲜桂林米粉",
+        "dish_name": "三鲜桂林米粉",
+        "text": "我晚饭吃三鲜桂林米粉，汤头鲜，口味清爽。",
+        "tags": [
+          "鲜香"
+        ],
+        "remarks": "我晚饭吃三鲜桂林米粉，汤头鲜，口味清爽。",
+        "photos": [],
+        "eatenAt": "2026-10-10T11:00:00.000Z",
+        "loggedAt": "2026-10-10T11:00:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚饭吃三鲜桂林米粉，汤头鲜，口味清爽。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HW-003",
+        "createdAt": "2026-10-25T10:13:29.949Z",
+        "updatedAt": "2026-10-25T10:13:29.949Z"
+      }
+    },
+    {
+      "key": "meal-031",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "面点套餐"
+        ],
+        "dish": "面点套餐",
+        "dish_name": "面点套餐",
+        "text": "我午餐在河东食堂吃面点套餐，家常简单。",
+        "tags": [],
+        "remarks": "我午餐在河东食堂吃面点套餐，家常简单。",
+        "photos": [],
+        "eatenAt": "2026-10-10T04:15:00.000Z",
+        "loggedAt": "2026-10-10T04:15:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我午餐在河东食堂吃面点套餐，家常简单。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HD03",
+        "createdAt": "2026-10-25T10:13:29.950Z",
+        "updatedAt": "2026-10-25T10:13:29.950Z"
+      }
+    },
+    {
+      "key": "meal-032",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "麻辣汤底自选碗"
+        ],
+        "dish": "麻辣汤底自选碗",
+        "dish_name": "麻辣汤底自选碗",
+        "text": "我晚上吃麻辣汤底自选碗，牛肉配豆腐，辣度高了些。",
+        "tags": [
+          "偏辣"
+        ],
+        "remarks": "我晚上吃麻辣汤底自选碗，牛肉配豆腐，辣度高了些。",
+        "photos": [],
+        "eatenAt": "2026-10-09T11:10:00.000Z",
+        "loggedAt": "2026-10-09T11:10:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "晚餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我晚上吃麻辣汤底自选碗，牛肉配豆腐，辣度高了些。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "ZL-001",
+        "createdAt": "2026-10-25T10:13:29.950Z",
+        "updatedAt": "2026-10-25T10:13:29.950Z"
+      }
+    },
+    {
+      "key": "meal-033",
+      "record": {
+        "schemaVersion": 3,
+        "dishes": [
+          "盖饭",
+          "出餐快"
+        ],
+        "dish": "盖饭、出餐快",
+        "dish_name": null,
+        "text": "我午餐在河西风味档口吃盖饭，出餐快，口味适中。",
+        "tags": [],
+        "remarks": "我午餐在河西风味档口吃盖饭，出餐快，口味适中。",
+        "photos": [],
+        "eatenAt": "2026-10-09T04:05:00.000Z",
+        "loggedAt": "2026-10-09T04:05:00.000Z",
+        "timeZone": "Asia/Shanghai",
+        "period": "午餐",
+        "inputMethod": "text",
+        "source": "text",
+        "originalText": "我午餐在河西风味档口吃盖饭，出餐快，口味适中。",
+        "originalSource": "fictional-mixed-dining-sample",
+        "item_id": "HX06",
+        "createdAt": "2026-10-25T10:13:29.951Z",
+        "updatedAt": "2026-10-25T10:13:29.951Z"
+      }
+    }
+  ]
+}

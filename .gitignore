@@ -1,6 +1,8 @@
 **/.env
 **/.env.*
 !**/.env.example
+!**/.env.demo.example
+**/.demo-data/
 **/.data/
 **/.venv/
 **/.openai/
