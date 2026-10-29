@@ -17,7 +17,11 @@ if [[ ! -x .venv/bin/python ]]; then
 fi
 .venv/bin/python -m pip install --no-cache-dir -r backend/requirements.lock
 if [[ ! -f .env ]]; then
-  cp .env.example .env
+  if [[ -f ../../.env.demo ]]; then
+    cp ../../.env.demo .env
+  else
+    cp .env.example .env
+  fi
   chmod 600 .env
 fi
 print '后端依赖已安装。双击“启动本地预览.command”即可打开 Web 应用。'

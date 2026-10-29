@@ -7,18 +7,23 @@ from urllib.request import ProxyHandler, build_opener
 import webbrowser
 
 import uvicorn
+from . import STARTUP_REVISION
 
 
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--no-browser", action="store_true")
-    parser.add_argument("--port", type=int, default=5173)
+    parser.add_argument("--port", type=int, default=5177)
     args = parser.parse_args()
     url = f"http://127.0.0.1:{args.port}/"
     opener = build_opener(ProxyHandler({}))
     try:
         with opener.open(url + "api/v1/health", timeout=2) as response:
-            running = json.load(response).get("service") == "meal-web"
+            health = json.load(response)
+            running = health.get("service") == "meal-web"
+            if running and health.get("startupRevision") != STARTUP_REVISION:
+                print("检测到同端口的旧服务，请先关闭原启动窗口，再运行本启动命令。", flush=True)
+                return 1
     except Exception:
         running = False
     if running:
@@ -42,4 +47,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

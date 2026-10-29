@@ -23,7 +23,7 @@ PASSWORD = "meal-test-password-2026"
 
 @pytest.fixture
 def app(tmp_path):
-    config = Settings(database_url=f"sqlite:///{tmp_path / 'test.db'}", media_root=tmp_path / "photos")
+    config = Settings(database_url=f"sqlite:///{tmp_path / 'test.db'}", media_root=tmp_path / "photos", seed_demo_account=False)
     return create_app(config, run_worker=False)
 
 

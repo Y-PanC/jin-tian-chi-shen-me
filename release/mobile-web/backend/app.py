@@ -20,7 +20,9 @@ from PIL import Image, ImageOps, UnidentifiedImageError
 from pydantic import ValidationError
 
 from .config import ROOT, Settings
+from . import STARTUP_REVISION
 from .domain import UserSettings, fail, iso, normalize_record, profile_data, statistics, uid, zone
+from .demo_seed import seed_account
 from .models import Base, LoginSession, Meal, Photo, RateBucket, RecognitionJob, User, database
 from .security import hash_password, token_hash, verify_password
 from .vision import VisionService, worker
@@ -82,6 +84,8 @@ def create_app(config=None, *, run_worker=True, use_migrations=True, vision_clie
             migrate(engine)
         else:
             Base.metadata.create_all(engine)
+        if config.seed_demo_account:
+            seed_account(factory)
         task = asyncio.create_task(worker(factory, config, vision)) if run_worker else None
         yield
         if task:
@@ -179,7 +183,8 @@ def create_app(config=None, *, run_worker=True, use_migrations=True, vision_clie
     @app.get("/api/v1/health")
     def health(db=Depends(db_session)):
         db.execute(select(1))
-        return {"service": "meal-web", "version": "4.0.0", "photoRecognition": config.vision_enabled}
+        return {"service": "meal-web", "version": "4.0.0", "photoRecognition": config.vision_enabled,
+                "startupRevision": STARTUP_REVISION}
 
     @app.post("/api/v1/auth/{action}")
     def login(action: str, request: Request, response: Response, body: dict = Body(default={}), db=Depends(db_session)):

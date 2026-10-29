@@ -1,0 +1,770 @@
+{
+  "name": "今天吃什么",
+  "version": "4.0.0",
+  "releaseDate": "2026-10-27",
+  "gitTag": "v4.0.0",
+  "sourceCommit": "ade53239cfba79d593d861d5d4bcfa853da4a255",
+  "sourceFiles": 177,
+  "files": {
+    "AGENTS.md": {
+      "bytes": 3139,
+      "sha256": "8f1ad531ddf57ea88ea19f185446ba138b316d006aa4c8081bac372cdb0a2e04"
+    },
+    "SOURCE_COMMIT.txt": {
+      "bytes": 41,
+      "sha256": "c3e948e478db724eacc8c01b953a4d4fa495abe8f618cf1c325056d4b763f25c"
+    },
+    "mobile-web/.dockerignore": {
+      "bytes": 82,
+      "sha256": "a367359d4c7989b3d13dc592b57ef8f349f97b8f9c035e4b3ce90396c97f92ab"
+    },
+    "mobile-web/.env.example": {
+      "bytes": 423,
+      "sha256": "9d3963140f5c3057cbd6b6227204018798abf711259e775613f9e20b773b1bc1"
+    },
+    "mobile-web/.gitignore": {
+      "bytes": 63,
+      "sha256": "0ba519df32f65eeb3ccb28e3753fffe12af36c3ab928696e0418afeccdf46a22"
+    },
+    "mobile-web/Dockerfile": {
+      "bytes": 502,
+      "sha256": "a76641df48889027d5ea0412eeac59e220833f91433914aab1ec8f1239c8f3eb"
+    },
+    "mobile-web/README.md": {
+      "bytes": 4855,
+      "sha256": "d007f93f1fac64ad7f497bc880f1f6de18c4d7ec4129697f1afe66590502d8d6"
+    },
+    "mobile-web/VERSION": {
+      "bytes": 6,
+      "sha256": "e1d49c569ae09b2ede16e2d83820a3809b35eb6c44c13ba9b5330598d6b8f43c"
+    },
+    "mobile-web/backend/__init__.py": {
+      "bytes": 1,
+      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+    },
+    "mobile-web/backend/alembic.ini": {
+      "bytes": 115,
+      "sha256": "f159b6ef01f795d5faa4a98d9117c31f22f80314fdf35ac9a5e5d04424ca284c"
+    },
+    "mobile-web/backend/app.py": {
+      "bytes": 24954,
+      "sha256": "3211c7bf7e98cbe9c623d6cafe23278d8738445d0e52a48f162ebb9e87f59bd7"
+    },
+    "mobile-web/backend/check_model.py": {
+      "bytes": 1117,
+      "sha256": "5af1d7d60948fff3cb48653549b6bf10fa6022b780424dbeca98ff745a8a4868"
+    },
+    "mobile-web/backend/config.py": {
+      "bytes": 1794,
+      "sha256": "9a3a74ad40b8939a7a6f5b29690ad4ea13b7a9c9c5c1270455e2067c5abf9533"
+    },
+    "mobile-web/backend/domain.py": {
+      "bytes": 6822,
+      "sha256": "86ff07e2f3c2da6a9eda13e5bd31b89dbc0efcdc89b17bbee86ca02d85ae10b2"
+    },
+    "mobile-web/backend/maintenance.py": {
+      "bytes": 1506,
+      "sha256": "18ac56e3a2e935dfacb35a8f4dfc6f6fca08f455ef5409f76181f70d177491bb"
+    },
+    "mobile-web/backend/migrations/env.py": {
+      "bytes": 975,
+      "sha256": "9953401c065a8ea23e2ae8554d3f2516a55e33ec7dad0a690ce3b983f611841b"
+    },
+    "mobile-web/backend/migrations/script.py.mako": {
+      "bytes": 355,
+      "sha256": "ee5dd9a388ee59fd3d089670c2f60db5f5904da6f21cfe3bfc44d7f567ee1546"
+    },
+    "mobile-web/backend/migrations/versions/656070957178_initial_web_backend.py": {
+      "bytes": 5371,
+      "sha256": "f98ca0b44beb0eccf5a36ecd4031a068cd21eec24be81726e752976c64a91a58"
+    },
+    "mobile-web/backend/models.py": {
+      "bytes": 3762,
+      "sha256": "c2270c9e32d95d13d39b33befcf23fd7c6215e292f963c02a1cc665827383dc9"
+    },
+    "mobile-web/backend/requirements.lock": {
+      "bytes": 637,
+      "sha256": "1a083152866d462dffcbb6cff05f99d6ed85487294fdb1f3d0b41adaa7353f9b"
+    },
+    "mobile-web/backend/requirements.txt": {
+      "bytes": 218,
+      "sha256": "89181a15c8a0596051b765437495baea33a8dfdd2bfe4848c0c28c1a739f8d1e"
+    },
+    "mobile-web/backend/run.py": {
+      "bytes": 1527,
+      "sha256": "63f00898b089546d73f54dd251bf7fc7b021f82c3d9014492a1b26c1ddcc52eb"
+    },
+    "mobile-web/backend/security.py": {
+      "bytes": 723,
+      "sha256": "b931a5d75f1ddb251690fccbc45056f3a27b8a631784a41b9df11883c84e41d5"
+    },
+    "mobile-web/backend/tests/test_api.py": {
+      "bytes": 17651,
+      "sha256": "8f216a3a2c40240dd76532970ce80bd7c7de32c57f558506bac0395aba3f20d6"
+    },
+    "mobile-web/backend/vision.py": {
+      "bytes": 6494,
+      "sha256": "6b215b79ae3fe2ab316c7db99fa47c89ff792858c6a815341492d97c8add6fd5"
+    },
+    "mobile-web/compose.yaml": {
+      "bytes": 828,
+      "sha256": "fb459cffa2cc82b29f0c8d5ac50ce94452c66a0e83f6420d2eb650611c1102a5"
+    },
+    "mobile-web/dist/assets/account.css": {
+      "bytes": 1965,
+      "sha256": "f317fdd924fa5e973e69b9c2f3939caae7189ee551402640145fd7323552be54"
+    },
+    "mobile-web/dist/assets/app.css": {
+      "bytes": 16524,
+      "sha256": "1764295a9ce02c425bddb3739e53bb59eda6eeb9b7671a7b20b61f337e724777"
+    },
+    "mobile-web/dist/assets/ask-draft.js": {
+      "bytes": 3265,
+      "sha256": "8f17f5e7bcfd63e1879ffc6d1986903a734a6bf3da0c852404cc8ad6d2e9aea3"
+    },
+    "mobile-web/dist/assets/ask-options.js": {
+      "bytes": 5241,
+      "sha256": "fd13eecd9cd9f3ba54429d83e0344715ff2c4ed733485ba95a4ba630bd15b729"
+    },
+    "mobile-web/dist/assets/bootstrap.js": {
+      "bytes": 1241,
+      "sha256": "03248d9c33fb9d6d56da7936b19563479df1bd386ad1c3c12d964c3dc330300b"
+    },
+    "mobile-web/dist/assets/cloud.js": {
+      "bytes": 4544,
+      "sha256": "f39fbcdc1fa9e07ca852357d0afa59887144517d3be1a8177cdcbd980a8fd602"
+    },
+    "mobile-web/dist/assets/data/decision-table.json": {
+      "bytes": 674,
+      "sha256": "bfe431c9cf707d123287844d05efaa6513d031c2c33bc8050f4b14392525fcc3"
+    },
+    "mobile-web/dist/assets/data/meal-seed-v3.js": {
+      "bytes": 9049,
+      "sha256": "f4f02c2b23179ae68f6d05c28129b50f71c27bde86d7c61bb74e37d6ae45af53"
+    },
+    "mobile-web/dist/assets/data/menu.json": {
+      "bytes": 75786,
+      "sha256": "78ff8bc81a29e753496063b41fec42865be2c32acad63ba1cb606bece2634fb1"
+    },
+    "mobile-web/dist/assets/data/record-images.json": {
+      "bytes": 6414,
+      "sha256": "b6f9b545b27ccc00f544feb5985af18c07a8efabda3b159ecc4396fa90334677"
+    },
+    "mobile-web/dist/assets/domain.js": {
+      "bytes": 9416,
+      "sha256": "d4e6e924091ae583b3b2dd85823d4c60c35c9f863ca232ecd2174e654ed8a678"
+    },
+    "mobile-web/dist/assets/entry.js": {
+      "bytes": 136,
+      "sha256": "adf90834c8d73138b551fe5fa1c3162a73890fa4d669144fa753ba21defd4053"
+    },
+    "mobile-web/dist/assets/home.js": {
+      "bytes": 3541,
+      "sha256": "ef12314394e1b36d8427d50450ae2d3933ba046c49e06bc1eed6d3684d6e52b2"
+    },
+    "mobile-web/dist/assets/images/dishes/README.md": {
+      "bytes": 1062,
+      "sha256": "cf8aa6c7a34c56836fecb1ffb7b00ffcc7382413bf3f597c019eaeac565f5750"
+    },
+    "mobile-web/dist/assets/images/dishes/chrysanthemum-greens.jpg": {
+      "bytes": 1397076,
+      "sha256": "d5e2e57a4c527774ff043e79b526bf75697537254ecd860e83f7dc6c089203f8"
+    },
+    "mobile-web/dist/assets/images/dishes/clams-steamed-egg.jpg": {
+      "bytes": 897524,
+      "sha256": "d925feeb223bcb67ca89bb7f186df737214173f8ba1cdbde5f0bec8c28b145ee"
+    },
+    "mobile-web/dist/assets/images/dishes/coconut-chicken.jpg": {
+      "bytes": 868867,
+      "sha256": "15ddd21dede26798a6f08536ea048225f2b15ea43df674a20de81a03e1ad6a64"
+    },
+    "mobile-web/dist/assets/images/dishes/credits.json": {
+      "bytes": 30299,
+      "sha256": "c3079299149e24f13e1b20772d6f4a1291de8733e4bdc52c17bdfe62cfc69376"
+    },
+    "mobile-web/dist/assets/images/dishes/lamb-radish-soup.jpg": {
+      "bytes": 719890,
+      "sha256": "84d24b6df1194fbe03f20b7e784e448c21347f5f5a1c0b20e2e21ff50c6234e8"
+    },
+    "mobile-web/dist/assets/images/dishes/pizza.jpg": {
+      "bytes": 1471235,
+      "sha256": "3c71fcc98ca7208dbd2b9826a279f71e5791ba14003abbeb7da31ae286fac608"
+    },
+    "mobile-web/dist/assets/images/dishes/record-beef-rice.jpg": {
+      "bytes": 110203,
+      "sha256": "fd5033e43bf897d48a0e89b1420e1ccdb4384d207b9b3658473aad424fa82ee3"
+    },
+    "mobile-web/dist/assets/images/dishes/record-buns.jpg": {
+      "bytes": 90790,
+      "sha256": "2afe717694412b1f367511f1cb2f9029db6a032bc00f477a49bedaaec1e9809d"
+    },
+    "mobile-web/dist/assets/images/dishes/record-canteen.jpg": {
+      "bytes": 94358,
+      "sha256": "7192fdbb405fc1dd2a38e4127835ac1e496a951b785c9e93abc88d889482e351"
+    },
+    "mobile-web/dist/assets/images/dishes/record-chicken-rice.jpg": {
+      "bytes": 149253,
+      "sha256": "6ef07597af9beecd050dd1844f0fbec99689e3cb5f14fdbbcd67ad149fafe282"
+    },
+    "mobile-web/dist/assets/images/dishes/record-curry.jpg": {
+      "bytes": 111377,
+      "sha256": "22eaeefd22415b0fa21fe02ceccde05fd36a0e4ffe6d87b5d5661049b9c3fc85"
+    },
+    "mobile-web/dist/assets/images/dishes/record-egg-rice.jpg": {
+      "bytes": 141444,
+      "sha256": "1046466bb9c2c7fc9965c7419caf4e23c7c5a5aba3941c13ba4f3dd5abe431b8"
+    },
+    "mobile-web/dist/assets/images/dishes/record-fried-chicken.jpg": {
+      "bytes": 113655,
+      "sha256": "bbf860d503fe70f1b704bb2226f9c5d67df2e1662eb81435f0f44b8d4681196e"
+    },
+    "mobile-web/dist/assets/images/dishes/record-guilin.jpg": {
+      "bytes": 84837,
+      "sha256": "bb64561b63513eb394caebc3270d78f7b73b841b3f002e56ad60cf38c20d931e"
+    },
+    "mobile-web/dist/assets/images/dishes/record-pork.jpg": {
+      "bytes": 141275,
+      "sha256": "9475d0916126fc26c9def4063121013b69ae0b0604ad8b422592eb2040cc906f"
+    },
+    "mobile-web/dist/assets/images/dishes/record-tomato-egg.jpg": {
+      "bytes": 88810,
+      "sha256": "968f31368e13ed9c54cc7b3ee79eaf926a11603b73d37f91579795c65222c69a"
+    },
+    "mobile-web/dist/assets/images/dishes/spicy-blood-curd.jpg": {
+      "bytes": 1032217,
+      "sha256": "c8e041a5b36caa9cfc20033b79087185808fa47a8641d69cba809ae0383bbe4b"
+    },
+    "mobile-web/dist/assets/images/dishes/unavailable.svg": {
+      "bytes": 389,
+      "sha256": "74428fee97145f57f82f0143aec1b97c19f4f3be7a44bc6b11c5ed64c1bf01d8"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r01.jpg": {
+      "bytes": 146710,
+      "sha256": "aa69bb94864b0485cbb65b4bb9017b13255def819087c06026986b6821b0829e"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r02.jpg": {
+      "bytes": 190352,
+      "sha256": "b4e7d4e93d66da071cb28d0e8b7c83649e43e94bc5043266a7896e1871e25736"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r03.jpg": {
+      "bytes": 256926,
+      "sha256": "6dc15954c71befc42fe259ce5484e1f7951bbdcc8dcb48c229cdc85707dc60bc"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r04.jpg": {
+      "bytes": 160908,
+      "sha256": "b5a3ce2706891b9d8674c758bccaa80c43bbf959a4af6cd2220ea30e0fc7feb8"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r05.jpg": {
+      "bytes": 327459,
+      "sha256": "c11cacf9d2906b5f795a554521a364579c15ebd4c5ccb53d3641e3e593bf82bc"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r06.jpg": {
+      "bytes": 149771,
+      "sha256": "47b2de1e5952ede4f405c16db96079d1f8039780340c7cf1f28c5d8f9b1ea910"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r07.jpg": {
+      "bytes": 107956,
+      "sha256": "b2437f9b00b357e1304c8060a68181a898ba1a87c6fe5560a960e32a1929e1f9"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r08.jpg": {
+      "bytes": 125072,
+      "sha256": "8c099a904133440e2cdaad6953933b00fb0656ab2f193c207b9290cdf7b41c97"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r09.jpg": {
+      "bytes": 325065,
+      "sha256": "b776748b00940345867409e07d6f48c4ec97af338bc1334d98f37df2208a9767"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r10.jpg": {
+      "bytes": 153631,
+      "sha256": "8195c1e7b842cb4b92bfc570784137086a724d01cfad4332e318883d0a212227"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r11.png": {
+      "bytes": 950739,
+      "sha256": "028183d0a9582daf7b4d4db9b2e3c578621003a57e0b1a75057056f5a62230ab"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r12.jpg": {
+      "bytes": 236091,
+      "sha256": "f3e0ed7a63df1adf6958fb289e3225dbcc3077cbe4dad8463b972c2af1790d6e"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r13.jpg": {
+      "bytes": 140938,
+      "sha256": "4039154feddd280bae618641ae33c603ea509d534d9ca42022e534774ee38aec"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r14.jpg": {
+      "bytes": 164281,
+      "sha256": "2e9108c509b28bd2d4caeb30fec6c17f6ec8bab9bd959cb27d5388df16f84e94"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r15.jpg": {
+      "bytes": 218915,
+      "sha256": "f23009cbf3eed3048c954bdab1c67fb5fe803d03ea65f11fdb83b46b86b81ec8"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r16.jpg": {
+      "bytes": 41988,
+      "sha256": "0fd2704342bb7afc46cfa505926544fae0e0c1982fb70f57bf7f1819e01f92d4"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r17.jpg": {
+      "bytes": 207575,
+      "sha256": "d75f7bda27ee23a88df2e7753c312fb9e19570e766862e526b5f79313b6ec453"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r18.jpg": {
+      "bytes": 131272,
+      "sha256": "ae0611de7e1aa970c16a8150a9b39ef7c82c185937b54c0f4df96da46c238bd3"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r19.jpg": {
+      "bytes": 363365,
+      "sha256": "94a200b0d218e610b87da35bcd9d5d235482a368c3fe2c73f4b4243b13d44ddf"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r20.jpg": {
+      "bytes": 129190,
+      "sha256": "fd5ad098cc86bec97cef44a34404d15d1fb54d95b1fc0bf31d2d70fb5bdbd5a4"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r21.jpg": {
+      "bytes": 142327,
+      "sha256": "82c5585497978d49c62396452ca8f050708b5bf3faf513834a4dbfa6f03a5b80"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r22.jpg": {
+      "bytes": 145230,
+      "sha256": "e2d2b02f796216b4534f25ba2c20359e67c400f8717fee404c427c8609cd7925"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r23.jpg": {
+      "bytes": 162768,
+      "sha256": "0c55e3aa9308daa445c9b3bc06aa873cd46a1c46912676ba9b1c0f949ad2e0ef"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r24.jpg": {
+      "bytes": 215548,
+      "sha256": "8ac7b3d573623708648076fa882309cc7e808783d18f8d1748c3eb213fbb5b00"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r25.jpg": {
+      "bytes": 154649,
+      "sha256": "aec94fce151426fe810b2b0e346866d7e3ea74beaf581ced93e194ee6b95f77a"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r26.jpg": {
+      "bytes": 181139,
+      "sha256": "7de39d2515bd9c59f9f775c14ddc563729fbdc78b4509646c570bf2b65648428"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r27.jpg": {
+      "bytes": 98142,
+      "sha256": "df06ad6ec66187d2d7dcb6f2eb015c7b691ada3c9823a48df155d9eddd624736"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r28.jpg": {
+      "bytes": 423646,
+      "sha256": "da65d3ca209d92d35f8bd3f5b8eee093cffe3a82c68f3928c89b4d95760e7154"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r29.jpg": {
+      "bytes": 121801,
+      "sha256": "ba03d8d778a7dea12d78fdea09703497142ce3c15aaa5654d9db379202970d9b"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r30.jpg": {
+      "bytes": 298260,
+      "sha256": "45bc9100b3040653cbc3ff531bae01b77796339ada30e1d16dd21482b1c570d7"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r31.jpg": {
+      "bytes": 98110,
+      "sha256": "9b1015cf3d77f9b43fa1d4f0393d5a5871ba7a48a1bd3b03dbd81cd50e2dc4b7"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r32.jpg": {
+      "bytes": 166136,
+      "sha256": "3d365227e812a1af7f8d4d4380be8b9c3c9e47e0f6c242c1c407cba552629365"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r33.jpg": {
+      "bytes": 181138,
+      "sha256": "0c2e9fcc7b9f1db499afea3ee6520a4ba3b04cad4d7ff553bb3132c909f52d40"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r34.jpg": {
+      "bytes": 259984,
+      "sha256": "2f7232eaf180b4211796d6d5da460a34115352f623cb1a817faa857d01ac06ec"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r35.jpg": {
+      "bytes": 122719,
+      "sha256": "d7f9d67e4f9d015c06b7ddcfda29dcec2abe171b50582c15185cce9a33533280"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r36.jpg": {
+      "bytes": 233274,
+      "sha256": "252aa862945741104df509325dc386742a7261968f25a27cd5fb434542dca55d"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r37.jpg": {
+      "bytes": 98412,
+      "sha256": "b0d793e1a3c82522a3dad7944a97ff2fd9830726190079da8452855e217a90a3"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r38.jpg": {
+      "bytes": 183589,
+      "sha256": "2d30b83854c3a1bebedcef68d3694949d53eb2a22dbf1bc6aa8ae1341b29c76d"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r39.jpg": {
+      "bytes": 153992,
+      "sha256": "1f131bf326b0dc77d59c96907b0b386abcb367a09b53b01fc706d56f0fb80b68"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r40.jpg": {
+      "bytes": 257275,
+      "sha256": "9d611b2cbaefcd805bb4378cbe009684429c40f2511202de194909e64ee960ef"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r41.jpg": {
+      "bytes": 371818,
+      "sha256": "22714be76635bd531e3f494f1b363d6c8ee969ea67396ca59532d6046beb7590"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r42.jpg": {
+      "bytes": 301623,
+      "sha256": "f3ba8e05910dc258a963f26b66547b48d9b5259a28e381b4c68eacb4be5b24c2"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r43.jpg": {
+      "bytes": 256362,
+      "sha256": "711988dde179236e3e1f017644c164033184efd9a3fdd619cc59b218bad25694"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r44.jpg": {
+      "bytes": 85081,
+      "sha256": "e3266faacea6dc2e77ccd8d5130cd9f99a5bfb893fa460e113bd3831fb75b473"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r45.jpg": {
+      "bytes": 117005,
+      "sha256": "71242a0e27d7119bd06105da5b19c8762cdd72945e346fd7f736324d63b99fbd"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r46.jpg": {
+      "bytes": 173240,
+      "sha256": "2e7e59cf9d68007e78cd261c96568ed3c61c778e4d28178074e8bfe7c5a488f6"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r47.jpg": {
+      "bytes": 197923,
+      "sha256": "12e845ab054bacf04baf8dae3b6897dc783b37effeed932b532346fdb0412eff"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r48.jpg": {
+      "bytes": 155786,
+      "sha256": "b74b9b62b5f2cdfd35ac4aaf72342f61d3fa4e51cca1010909940f2840b86767"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r49.jpg": {
+      "bytes": 345687,
+      "sha256": "fe183903981fba82f8635281f1d83978074c9f166cab23d9970d21dc3458ff98"
+    },
+    "mobile-web/dist/assets/images/dishes/web-r50.jpg": {
+      "bytes": 165750,
+      "sha256": "8451675168c715161865953261183f015ea69486f58a8237011784ef9f9cfc7b"
+    },
+    "mobile-web/dist/assets/journal.css": {
+      "bytes": 14015,
+      "sha256": "c3a8eecd24facf11257686c2aa3ab1fcfc1bf7936b201e458eb48ff08bdc4406"
+    },
+    "mobile-web/dist/assets/journal.js": {
+      "bytes": 8248,
+      "sha256": "9c2565bf97f4e9bd2dc65611424c2783557e0d882bca113cc4dccf0d2954f61f"
+    },
+    "mobile-web/dist/assets/knowledge-deck.js": {
+      "bytes": 1001,
+      "sha256": "d70bafe451060039e860a00286f656c530feec686d138ed7c861984cb0e59c11"
+    },
+    "mobile-web/dist/assets/log.js": {
+      "bytes": 9929,
+      "sha256": "77c09cd84a5afa19dfe73b5814cb603c5c9f312df4632c35a02d825d5bcdc6bf"
+    },
+    "mobile-web/dist/assets/login.js": {
+      "bytes": 1885,
+      "sha256": "3ecc1e0d437d495efc0513650b78c56d0c496a3a95b48c113c25031bbeba69eb"
+    },
+    "mobile-web/dist/assets/meal-editor.js": {
+      "bytes": 18740,
+      "sha256": "a90ca29a11db52fe9e48a075dbd663ad18ed2b10fafea3c5bfb8c09ebc2f7487"
+    },
+    "mobile-web/dist/assets/meal-media.js": {
+      "bytes": 3378,
+      "sha256": "69b8d5a2b6594420d25c0dfac10284c488d428257db0e7703345ae5321142023"
+    },
+    "mobile-web/dist/assets/meal-pages.css": {
+      "bytes": 8808,
+      "sha256": "42bdc44b021efb55290fc6bb1de89700b21161a141abbd23afa98e1be28700f2"
+    },
+    "mobile-web/dist/assets/meal-records.js": {
+      "bytes": 5591,
+      "sha256": "30e5472ac1b5e82900e7e616a26f4c204b5813cf81e7fee5491a649cae98c023"
+    },
+    "mobile-web/dist/assets/preference-flow.js": {
+      "bytes": 13964,
+      "sha256": "51c1a4dd6b3de1d7a6ab65182779ef39c057eaef2b1e5640ea8c5aa3085a1d04"
+    },
+    "mobile-web/dist/assets/preferences.js": {
+      "bytes": 5157,
+      "sha256": "12840ca641105ef2f4d3dc3c0d4b81fac38414c495a7300b99db73271d8a6e63"
+    },
+    "mobile-web/dist/assets/profile-stats.js": {
+      "bytes": 2024,
+      "sha256": "8162d74cc88e2e082689984e9937f6efb5d24d12ad42b53646b6b06137e9b9a8"
+    },
+    "mobile-web/dist/assets/profile.js": {
+      "bytes": 3683,
+      "sha256": "de09c92914415f6c0a3ce1e74b1c20f04941489ea8a92dd8124b7e2042f9cc16"
+    },
+    "mobile-web/dist/assets/rating-stars.js": {
+      "bytes": 914,
+      "sha256": "ec5e2652465c5a9dab9eebff4df44932322e748dd6eb4a2b0eaef2ead2bebe80"
+    },
+    "mobile-web/dist/assets/recognition-draft.js": {
+      "bytes": 646,
+      "sha256": "b649bba542b7f072a77b39bf036b547d62c282c0014cc97fea255c294c45fc44"
+    },
+    "mobile-web/dist/assets/recommendation-meal.js": {
+      "bytes": 2699,
+      "sha256": "f5d21e42e8e0bf2f7bc9e5a87463d923d46daeb0157fb02fe6a179b5b4faf21b"
+    },
+    "mobile-web/dist/assets/recommendation-score.js": {
+      "bytes": 16649,
+      "sha256": "4c006a6302ad9576037a33c2118f0d5ef504719a2c4261b3a69dff83bcdf552c"
+    },
+    "mobile-web/dist/assets/record-images.js": {
+      "bytes": 2120,
+      "sha256": "1bae63825a464d1929e322cce2b1051ef168cc8a09c4c2869f52b214ca16fdda"
+    },
+    "mobile-web/dist/assets/restart.js": {
+      "bytes": 1162,
+      "sha256": "b1cb7a870813f458d5f0f0fb11ec5e463c581bf97c47a289fdce60eb23114504"
+    },
+    "mobile-web/dist/assets/result-card.js": {
+      "bytes": 4037,
+      "sha256": "27601033275b67da4a957b33cab5a1126f60b4ccd32087a9419d5053038c086f"
+    },
+    "mobile-web/dist/assets/result-evidence.js": {
+      "bytes": 2725,
+      "sha256": "5ea4081a853be0fc32e6bb0d9daf936463bcd330b61d92878f3fc682582f7f67"
+    },
+    "mobile-web/dist/assets/result-request.js": {
+      "bytes": 1242,
+      "sha256": "3a0e3eb18818d0c61af8cc6d937573aa7008f6e0fd9975ca4c9040b78daef65c"
+    },
+    "mobile-web/dist/assets/result-state.js": {
+      "bytes": 3700,
+      "sha256": "775d5a5dd46ad686e22cb5ddf054d44c41414aed2273c4f60794dc0b0a494c8e"
+    },
+    "mobile-web/dist/assets/result.js": {
+      "bytes": 6572,
+      "sha256": "ae6f6d8d2441476753963f6f57a4d7f91c4b9a50552fdfbc793ee575da3bcdc2"
+    },
+    "mobile-web/dist/assets/score-evidence.js": {
+      "bytes": 5185,
+      "sha256": "2e66028bc1f6b53cde582e049a8a7776519b0d1d4fb50a922e0b636226dd97fb"
+    },
+    "mobile-web/dist/assets/services.js": {
+      "bytes": 4586,
+      "sha256": "36e8130869d0889dc552c68b508fe66ff8589bed85f340b7d87512c53e6bb0f4"
+    },
+    "mobile-web/dist/assets/settings.js": {
+      "bytes": 5196,
+      "sha256": "2c71bcb91859cc6d9dfb8ff4e54ef9350148fe5123366484ec0631cce12e8619"
+    },
+    "mobile-web/dist/index.html": {
+      "bytes": 584,
+      "sha256": "6cc5c5b8b1a5cdd2b59d6218f67925bf9ed4f180da0577e261387a68a654e0a5"
+    },
+    "mobile-web/dist/page0_home_old_user.html": {
+      "bytes": 15899,
+      "sha256": "fb5b4f6d89ce478524973acc65d95cfa014e4dcd7357e3fb663cea50f9bef3cc"
+    },
+    "mobile-web/dist/page1_guide.html": {
+      "bytes": 15589,
+      "sha256": "9d112e13107fbb241c87450b29a10dad08d7f64394fff776f3f7366451e38be7"
+    },
+    "mobile-web/dist/page2_ask.html": {
+      "bytes": 14128,
+      "sha256": "fee3b4ed759cc87830c87976bfa2c5956f0f955dac7b2da73ba5c313ec15802c"
+    },
+    "mobile-web/dist/page3_evidence.html": {
+      "bytes": 1764,
+      "sha256": "85571c380f147f1ec172b41a02ad31081d11b6114b5be3992e4c992e6feea7d9"
+    },
+    "mobile-web/dist/page3_result.html": {
+      "bytes": 5834,
+      "sha256": "e141354db1f49c27c1473ef8051d07595925254edb4ec38233a4aee2e18fef93"
+    },
+    "mobile-web/dist/page4_log.html": {
+      "bytes": 4898,
+      "sha256": "abb4cb3cc61c7502e34cab2f2f6266c6dec398ea09d2ea3107449d252d9b0927"
+    },
+    "mobile-web/dist/page4_meal.html": {
+      "bytes": 5976,
+      "sha256": "2d16b8917644e8c13bc506409eb7812fa77f04e6ff3eda3205e76aa00d62b6d3"
+    },
+    "mobile-web/dist/page5_profile.html": {
+      "bytes": 4901,
+      "sha256": "4f2dc57eeae2a88dc0e5eb6479c41d759acde60cafe5ba0cdc967be4a4f94ec3"
+    },
+    "mobile-web/dist/page6_settings.html": {
+      "bytes": 5374,
+      "sha256": "3f336da14ab47a36bd3d4f3edd090fd1d8dd3d2e8da05cb2181e178cb74c9adf"
+    },
+    "mobile-web/dist/page_login.html": {
+      "bytes": 1986,
+      "sha256": "10df384b62091271ceaf80dd8c7e738d0ee3c8f56b66d4b7a754b0a81644a25e"
+    },
+    "mobile-web/dist/restart_guide.html": {
+      "bytes": 1336,
+      "sha256": "ebede9495f9423644c5cd44ee56136019cccecb662d6c677f7f6de55540b76fe"
+    },
+    "mobile-web/dist/version.json": {
+      "bytes": 188,
+      "sha256": "f5177151b6ae0748332d17f77b36992d78e66daec2fe18fbad95efdc0a991caa"
+    },
+    "mobile-web/docs/backend.md": {
+      "bytes": 7079,
+      "sha256": "e3d38baaaf66106c4231ddd688e799a9fff58c2d43261485342889c972237e4d"
+    },
+    "mobile-web/docs/health-knowledge-sources.md": {
+      "bytes": 1135,
+      "sha256": "907a8b5491dd121dfa74744b7de968696616a441a8a4a2ae2fc8f1b6556dd818"
+    },
+    "mobile-web/docs/interface-contracts.md": {
+      "bytes": 7961,
+      "sha256": "71a6fd3927f67419c999504525a7618a67e5d8a9d38bbae6d5d04f61660ab8b9"
+    },
+    "mobile-web/docs/meal-seed-sources.md": {
+      "bytes": 1026,
+      "sha256": "3adb578bd4e12a17b4dcd0942c070e137883ec1e26f49ac8817392d09be429ed"
+    },
+    "mobile-web/docs/recommendation-prompt-v4.txt": {
+      "bytes": 17197,
+      "sha256": "5cd9aae0196ad73eb98f53dca1a1a8fd2ea5a568941a6b28060767f665b0dc49"
+    },
+    "mobile-web/docs/recommendation-rules.md": {
+      "bytes": 7185,
+      "sha256": "ff3c728f8aef9f962c6dab72eeba42530aad45fc737edda652b5ed115004da55"
+    },
+    "mobile-web/docs/record-photo-sources.md": {
+      "bytes": 3064,
+      "sha256": "0058990cfc0e571e9d4adfa79b3a7fe71ff5bde2709b7286b57deeb4bd366007"
+    },
+    "mobile-web/docs/releases/v1.0.0.md": {
+      "bytes": 2568,
+      "sha256": "d1fc23057e9b432cb9a71d84ea6d94afa32ac076737a06f06522a16f9d094aa4"
+    },
+    "mobile-web/docs/releases/v2.0.0.md": {
+      "bytes": 7115,
+      "sha256": "7f07e36f7e1ffeea582fdef359c97c4f5d0b12d98178d1fd8b112a31d8fbced6"
+    },
+    "mobile-web/docs/releases/v2.0.1.md": {
+      "bytes": 5382,
+      "sha256": "0fe455a2559901f23a4d6d7735510b5937e10d338a4ebd8365377da19f2855f1"
+    },
+    "mobile-web/docs/releases/v3.0.0.md": {
+      "bytes": 3882,
+      "sha256": "e69b0eef12413753b8031d213d33d3f239acb2606ccdf6a6c27f11762a6bf6f8"
+    },
+    "mobile-web/docs/releases/v4.0.0.md": {
+      "bytes": 7645,
+      "sha256": "b4cc04c671cc57776dca7b7c3811bbe2f8a65d822532cd6d8dfb0013f5b2bb7c"
+    },
+    "mobile-web/package.json": {
+      "bytes": 168,
+      "sha256": "03f78becd6d8382ad3658f9796732a008ce6be7dd09da1ba59ebbd7038a4de56"
+    },
+    "mobile-web/tests/ask-draft.test.mjs": {
+      "bytes": 4124,
+      "sha256": "5fa6f99ef4cd776d596e07dc331022138a70da3c42f0ccdb7b63a7f1ce3d9d9c"
+    },
+    "mobile-web/tests/ask-options.test.mjs": {
+      "bytes": 6329,
+      "sha256": "5e29b8b4191b98c08ce496e30cbb7644c38c80a256631161cadd9cf5d7633fe4"
+    },
+    "mobile-web/tests/cloud.test.mjs": {
+      "bytes": 4631,
+      "sha256": "6f870e583bdb2bc13e738ef40075f3929a82b9abbb5bcde39008c7d387bff092"
+    },
+    "mobile-web/tests/domain.test.mjs": {
+      "bytes": 6107,
+      "sha256": "4c65ca5c33974620c2877bfc13ead84756bc8dfbece0b79667f00f76d27baf78"
+    },
+    "mobile-web/tests/journal.test.mjs": {
+      "bytes": 4822,
+      "sha256": "0e7003ac196b82b3fbb37ff54d5f0fd06ea873bab544e792f1a1c563bd7ac794"
+    },
+    "mobile-web/tests/knowledge.test.mjs": {
+      "bytes": 2060,
+      "sha256": "bfa603c23ae5a37e421ee5e723e9b0a55e7bed47434b377c6afbcdcb82d0abef"
+    },
+    "mobile-web/tests/meal-records.test.mjs": {
+      "bytes": 5285,
+      "sha256": "0880b2edd21de9863916ccfba04aa49f4f4035452df100ce72bf59706d1982a4"
+    },
+    "mobile-web/tests/preference-flow.test.mjs": {
+      "bytes": 5600,
+      "sha256": "7f0906bee73ee508c8f41bcd170636b70a4ac7af4c2eafb8ab6ef4eb57b1a0f0"
+    },
+    "mobile-web/tests/profile-stats.test.mjs": {
+      "bytes": 3067,
+      "sha256": "97d520f5f3deef7c04093043bc08e724dd0046e01c5cd6d952ba010bfcb6718e"
+    },
+    "mobile-web/tests/recognition-draft.test.mjs": {
+      "bytes": 2530,
+      "sha256": "ca4b7e1c9daddba5a60c722043a3942fd83299b1c7be8793fb7e517d4626e8c1"
+    },
+    "mobile-web/tests/recommendation-evidence.test.mjs": {
+      "bytes": 7585,
+      "sha256": "369512b27fc4f7080abc476dbf6adf65d81133864cdd75dece0a8c53d7872721"
+    },
+    "mobile-web/tests/recommendation-meal.test.mjs": {
+      "bytes": 5269,
+      "sha256": "5b1c9a5d30e4f6409202125d486acdef3bd63a0853b0ba4ee21d704d09cd8713"
+    },
+    "mobile-web/tests/recommendation-pages.test.mjs": {
+      "bytes": 4847,
+      "sha256": "f2c301bb1e6648bb23c396645e8121c72fded46807c66f7799dec0fa8ace2498"
+    },
+    "mobile-web/tests/recommendation-reasons.test.mjs": {
+      "bytes": 3505,
+      "sha256": "1968320615106a1bd04e5deeb84d285da0671a45bccb969619ff00a4abaf0bd7"
+    },
+    "mobile-web/tests/recommendation-score.test.mjs": {
+      "bytes": 10405,
+      "sha256": "20a7700a46f856a5f7355aa819906329b3c5dd26700eff9460fddc59115d9ddb"
+    },
+    "mobile-web/tests/record-images.test.mjs": {
+      "bytes": 2787,
+      "sha256": "819b08e6b53d0bb94a4773347725d35f7c5ed8987fd5a6873ce8adb2690dd1c9"
+    },
+    "mobile-web/tests/result-request.test.mjs": {
+      "bytes": 1832,
+      "sha256": "d3bb066eed6295747ff271fb839ae673a64ed389502bf928aa46d56f9dec8c6a"
+    },
+    "mobile-web/tests/storage.test.mjs": {
+      "bytes": 1899,
+      "sha256": "0675af0a774ca917addae2505716c2ea692f998bbed63a2666c0216d6fcbfdc9"
+    },
+    "启动本地预览.command": {
+      "bytes": 244,
+      "sha256": "a7047f37a39c2c6814b3e0a5333e96381a8a5fcff8e67f1c52f8aa140c35c2ae"
+    },
+    "安装后端依赖.command": {
+      "bytes": 729,
+      "sha256": "4c19341737f8fc9244158b90684a4af4852161560c177e323a7373cb86674520"
+    },
+    "校验版本.py": {
+      "bytes": 1234,
+      "sha256": "595c79def78254ee76dbb7d2f8c766eabaec88ed6c0438346eb260fb67f28491"
+    },
+    "版本说明.md": {
+      "bytes": 2976,
+      "sha256": "4a00cb0ece0dd165201ae23083f5892bf5b78b81f66fa1f8fbee0c44f1b50e3e"
+    },
+    "部署说明.md": {
+      "bytes": 1764,
+      "sha256": "4ccabc844e1b7d78be43cfae6031c5371586f4b0b0cb8628259f69d2a480ae71"
+    },
+    "项目资料/今天吃什么-v3.0文档.xlsx": {
+      "bytes": 6879274,
+      "sha256": "28af0a29bcffc3ccde6ca2a74cf6515dd611faeb8711b2c224101e658d769dab"
+    },
+    "项目资料/今天吃什么.xlsx": {
+      "bytes": 28016,
+      "sha256": "a80238b86e7ad922fbc1c6f4ea744f0ea1e69b348b4ba9573585b2229c95a0d1"
+    },
+    "验证记录/前端自动检查.tap": {
+      "bytes": 23397,
+      "sha256": "513a20d08c246212a08812939a75606a28d8ca72082987fd3e68cb2cdc082803"
+    },
+    "验证记录/合并前备份.json": {
+      "bytes": 412,
+      "sha256": "8dc6ec5839ae9a14f0fe70ae8086b1a0439d9716c5ff944badae83c253834d98"
+    },
+    "验证记录/后端自动检查.txt": {
+      "bytes": 603,
+      "sha256": "728936e517a178e54d8b1a6d10f5c392348b8fd94385478bcc9d12655d9dc9ee"
+    },
+    "验证记录/版本与资源检查.txt": {
+      "bytes": 200,
+      "sha256": "4baee42ceef4142a4f30478d7d84a477d148778832fb93a82d5549e8eedd2864"
+    }
+  }
+}

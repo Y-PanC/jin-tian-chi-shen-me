@@ -4,11 +4,11 @@
   "releaseDate": "2026-10-27",
   "gitTag": "v4.0.0",
   "sourceCommit": "ade53239cfba79d593d861d5d4bcfa853da4a255",
-  "sourceFiles": 177,
+  "sourceFiles": 182,
   "files": {
     "AGENTS.md": {
-      "bytes": 3139,
-      "sha256": "8f1ad531ddf57ea88ea19f185446ba138b316d006aa4c8081bac372cdb0a2e04"
+      "bytes": 3839,
+      "sha256": "2966cc574869d337d6a7722157f12b6bb4b0997930ed87d0d07dc7c8e0910b4c"
     },
     "SOURCE_COMMIT.txt": {
       "bytes": 41,
@@ -19,8 +19,8 @@
       "sha256": "a367359d4c7989b3d13dc592b57ef8f349f97b8f9c035e4b3ce90396c97f92ab"
     },
     "mobile-web/.env.example": {
-      "bytes": 423,
-      "sha256": "9d3963140f5c3057cbd6b6227204018798abf711259e775613f9e20b773b1bc1"
+      "bytes": 519,
+      "sha256": "bc7f7360e5c3b8f8d7b44d37814da9f9108848785ff49b888921b0bc280c53fb"
     },
     "mobile-web/.gitignore": {
       "bytes": 63,
@@ -31,32 +31,40 @@
       "sha256": "a76641df48889027d5ea0412eeac59e220833f91433914aab1ec8f1239c8f3eb"
     },
     "mobile-web/README.md": {
-      "bytes": 4855,
-      "sha256": "d007f93f1fac64ad7f497bc880f1f6de18c4d7ec4129697f1afe66590502d8d6"
+      "bytes": 5268,
+      "sha256": "6336d74afef93b397e7bd372c8504d141faedf50628cfa8e0fb0e46484205d0d"
     },
     "mobile-web/VERSION": {
       "bytes": 6,
       "sha256": "e1d49c569ae09b2ede16e2d83820a3809b35eb6c44c13ba9b5330598d6b8f43c"
     },
     "mobile-web/backend/__init__.py": {
-      "bytes": 1,
-      "sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b"
+      "bytes": 42,
+      "sha256": "1e9569114a47149a3a1991030f5ea0945ab3467a2e4334ebb750a001c33d433c"
     },
     "mobile-web/backend/alembic.ini": {
       "bytes": 115,
       "sha256": "f159b6ef01f795d5faa4a98d9117c31f22f80314fdf35ac9a5e5d04424ca284c"
     },
     "mobile-web/backend/app.py": {
-      "bytes": 24954,
-      "sha256": "3211c7bf7e98cbe9c623d6cafe23278d8738445d0e52a48f162ebb9e87f59bd7"
+      "bytes": 25145,
+      "sha256": "8f5db0261b3ad6a1f57f726c34c67ca86ca4f14d89fbb31929cd80248eb6eb59"
     },
     "mobile-web/backend/check_model.py": {
       "bytes": 1117,
       "sha256": "5af1d7d60948fff3cb48653549b6bf10fa6022b780424dbeca98ff745a8a4868"
     },
     "mobile-web/backend/config.py": {
-      "bytes": 1794,
-      "sha256": "9a3a74ad40b8939a7a6f5b29690ad4ea13b7a9c9c5c1270455e2067c5abf9533"
+      "bytes": 2902,
+      "sha256": "21b8c558b5ffd97d0bfc2e2d786d7a53ea08e0599e605848304bd553b6bd610e"
+    },
+    "mobile-web/backend/data/demo-account.json": {
+      "bytes": 31144,
+      "sha256": "729ef772b69b38fe41ca8f3df385bbf18e27d336774c4ad0c45aa7ffbb145bd4"
+    },
+    "mobile-web/backend/demo_seed.py": {
+      "bytes": 3527,
+      "sha256": "d3eaef74c22706de08e8da89002cdf4b4a0079826df67830f76d3219c6776120"
     },
     "mobile-web/backend/domain.py": {
       "bytes": 6822,
@@ -78,9 +86,13 @@
       "bytes": 5371,
       "sha256": "f98ca0b44beb0eccf5a36ecd4031a068cd21eec24be81726e752976c64a91a58"
     },
+    "mobile-web/backend/migrations/versions/d4e029a00001_demo_initialization.py": {
+      "bytes": 616,
+      "sha256": "9decdbb0512d21745b54e0dcaf2b41153dacdbb6947eaff5690d15897783ff05"
+    },
     "mobile-web/backend/models.py": {
-      "bytes": 3762,
-      "sha256": "c2270c9e32d95d13d39b33befcf23fd7c6215e292f963c02a1cc665827383dc9"
+      "bytes": 4054,
+      "sha256": "a9868f7a6361d4014f0f7de3457571e0b0ca16f5bc8c223a84a38202199ef796"
     },
     "mobile-web/backend/requirements.lock": {
       "bytes": 637,
@@ -91,24 +103,32 @@
       "sha256": "89181a15c8a0596051b765437495baea33a8dfdd2bfe4848c0c28c1a739f8d1e"
     },
     "mobile-web/backend/run.py": {
-      "bytes": 1527,
-      "sha256": "63f00898b089546d73f54dd251bf7fc7b021f82c3d9014492a1b26c1ddcc52eb"
+      "bytes": 1827,
+      "sha256": "611e21e0ed96061ffa4bc3e3e8e85a2be06bd13d8d31f606a26077ca720be0a5"
     },
     "mobile-web/backend/security.py": {
       "bytes": 723,
       "sha256": "b931a5d75f1ddb251690fccbc45056f3a27b8a631784a41b9df11883c84e41d5"
     },
     "mobile-web/backend/tests/test_api.py": {
-      "bytes": 17651,
-      "sha256": "8f216a3a2c40240dd76532970ce80bd7c7de32c57f558506bac0395aba3f20d6"
+      "bytes": 17676,
+      "sha256": "c6fc6ca1934a2c363947245d8ccbab70930146808b7b0e336a1ad095f50fe38a"
+    },
+    "mobile-web/backend/tests/test_demo_seed.py": {
+      "bytes": 11167,
+      "sha256": "a0495c6f1f7febfd747aef2e29c67c1d4617960bc47a854b0ea2faebd545fa2a"
     },
     "mobile-web/backend/vision.py": {
       "bytes": 6494,
       "sha256": "6b215b79ae3fe2ab316c7db99fa47c89ff792858c6a815341492d97c8add6fd5"
     },
-    "mobile-web/compose.yaml": {
+    "mobile-web/compose.postgres.yaml": {
       "bytes": 828,
       "sha256": "fb459cffa2cc82b29f0c8d5ac50ce94452c66a0e83f6420d2eb650611c1102a5"
+    },
+    "mobile-web/compose.yaml": {
+      "bytes": 265,
+      "sha256": "a1a4eaf3e2a35644da41e637d376d7fbfb2f4377c14afc2beb6730e62f5f7484"
     },
     "mobile-web/dist/assets/account.css": {
       "bytes": 1965,
@@ -599,8 +619,8 @@
       "sha256": "f5177151b6ae0748332d17f77b36992d78e66daec2fe18fbad95efdc0a991caa"
     },
     "mobile-web/docs/backend.md": {
-      "bytes": 7079,
-      "sha256": "e3d38baaaf66106c4231ddd688e799a9fff58c2d43261485342889c972237e4d"
+      "bytes": 8143,
+      "sha256": "0b2c3f161e271828d356b3110a7fe2e66d345f80b68dcffdf41130cc75f70957"
     },
     "mobile-web/docs/health-knowledge-sources.md": {
       "bytes": 1135,
@@ -727,20 +747,20 @@
       "sha256": "a7047f37a39c2c6814b3e0a5333e96381a8a5fcff8e67f1c52f8aa140c35c2ae"
     },
     "安装后端依赖.command": {
-      "bytes": 729,
-      "sha256": "4c19341737f8fc9244158b90684a4af4852161560c177e323a7373cb86674520"
+      "bytes": 807,
+      "sha256": "0f48575568b5f8e7e877e39a0290ac7346812c0e3857fd421278fa907d4d5d2d"
     },
     "校验版本.py": {
-      "bytes": 1234,
-      "sha256": "595c79def78254ee76dbb7d2f8c766eabaec88ed6c0438346eb260fb67f28491"
+      "bytes": 1261,
+      "sha256": "63a4d11d9a2f5abb33c296bee427a70be9422ac94485a00dced8bc2f2b451246"
     },
     "版本说明.md": {
-      "bytes": 2976,
-      "sha256": "4a00cb0ece0dd165201ae23083f5892bf5b78b81f66fa1f8fbee0c44f1b50e3e"
+      "bytes": 1375,
+      "sha256": "89f7ea6200b874213d478dce34965b2bd612771f7305b0a107d1009ff26a359a"
     },
     "部署说明.md": {
-      "bytes": 1764,
-      "sha256": "4ccabc844e1b7d78be43cfae6031c5371586f4b0b0cb8628259f69d2a480ae71"
+      "bytes": 1480,
+      "sha256": "16761eff593172fa3020c3de4058945fd90ef429f66445faa4959cd72a1ba888"
     },
     "项目资料/今天吃什么-v3.0文档.xlsx": {
       "bytes": 6879274,
@@ -766,5 +786,8 @@
       "bytes": 200,
       "sha256": "4baee42ceef4142a4f30478d7d84a477d148778832fb93a82d5549e8eedd2864"
     }
-  }
+  },
+  "deliveryVersion": "4.0.0+deploy.2",
+  "deliveryDate": "2026-10-29",
+  "baseSourceFiles": 177
 }

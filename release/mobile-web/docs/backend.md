@@ -2,14 +2,15 @@
 
 ## 运行方式
 
-Python 3.11+；锁定依赖在 `backend/requirements.lock`。本地通过 `.venv/bin/python -m backend.run --no-browser` 启动，入口沿用 `http://127.0.0.1:5173/`，同一 FastAPI 服务提供 `dist/` 和 `/api/v1/`，不需要跨域配置。
+Python 3.11+；锁定依赖在 `backend/requirements.lock`。本地通过 `.venv/bin/python -m backend.run --no-browser` 启动，入口沿用 `http://127.0.0.1:5177/`，同一 FastAPI 服务提供 `dist/` 和 `/api/v1/`，不需要跨域配置。
 
-本地数据库默认 SQLite，首次启动执行 Alembic 迁移。设置 `DATABASE_URL=postgresql+psycopg://...` 可使用 PostgreSQL。所有用户数据通过内部 UUID 关联；页面展示 ID 不参与认证。当前账号密码登录不提供自助找回密码，正式扩大使用范围前需补账号恢复流程。
+本地数据库默认 SQLite，首次启动执行 Alembic 迁移，并自动准备 Yunzhong / 1234567890、个人偏好和 33 餐历史。初始化标记保存在数据库，重启不覆盖已编辑或删除内容。其他注册账号仍从空记录开始。设置 `DATABASE_URL=postgresql+psycopg://...` 可使用 PostgreSQL。所有用户数据通过内部 UUID 关联；页面展示 ID 不参与认证。当前账号密码登录不提供自助找回密码，正式扩大使用范围前需补账号恢复流程。
 
 ## 后端配置
 
 | 环境变量 | 用途 |
 | --- | --- |
+| `SEED_DEMO_ACCOUNT` | 默认 true，正常启动初始化公开演示账号；false 时跳过初始化 |
 | `DATABASE_URL` | 留空时使用 `.data/meals.sqlite3` |
 | `MEDIA_ROOT` | 留空时使用 `.data/photos/` |
 | `ALLOWED_HOSTS` | 逗号分隔的请求主机名，默认仅本机 |
@@ -47,7 +48,7 @@ Python 3.11+；锁定依赖在 `backend/requirements.lock`。本地通过 `.venv
 
 ## 部署文件
 
-`Dockerfile` 与 `compose.yaml` 提供 Web + PostgreSQL，数据库和照片使用独立持久卷；Web 端口默认只映射本机 `127.0.0.1:8000`。部署前设置 `.env` 中的 `POSTGRES_PASSWORD`（URL 安全字符）、`ALLOWED_HOSTS` 和模型参数。Compose 将 Cookie 设置为 Secure，需在 HTTPS 反向代理后使用。
+`Dockerfile` 与默认 `compose.yaml` 提供带持久存储的 Web + SQLite；`compose.postgres.yaml` 提供 Web + PostgreSQL，数据库和照片使用独立持久卷；默认 SQLite 的 Web 端口映射本机 `127.0.0.1:5177`；PostgreSQL 配置沿用 `127.0.0.1:8000`。部署前设置 `.env` 中的 `POSTGRES_PASSWORD`（URL 安全字符）、`ALLOWED_HOSTS` 和模型参数。PostgreSQL Compose 将 Cookie 设置为 Secure，需在 HTTPS 反向代理后使用；默认 SQLite Compose 读取 .env 的 Cookie 设置，本机 HTTP 使用 false。
 
 反向代理应传递 Host 与 X-Forwarded-Proto；通过 Uvicorn 的 `FORWARDED_ALLOW_IPS` 指定实际代理 IP。不要向非可信来源开放代理头信任。部署后验证登录 Cookie、跨来源写入拒绝、照片鉴权及模型连通性。当前电脑 Docker daemon 未运行；已验证 PostgreSQL 表结构编译，容器和 PostgreSQL 的实际运行需在有容器服务的环境中完成。
 
@@ -68,3 +69,9 @@ PostgreSQL 使用 `pg_dump` 备份数据库，并备份照片卷；恢复验证�
 餐食联调照片：[Tomato and eggs.JPG](https://commons.wikimedia.org/wiki/File:Tomato_and_eggs.JPG)，作者 Godofnanjing，许可 [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/)。仅用于临时测试数据库，上传时缩放和重编码；不作为产品默认餐食或用户样例。
 
 参考：[OpenAI Python SDK](https://developers.openai.com/api/reference/python)、[百炼 qwen3.8-max](https://help.aliyun.com/zh/model-studio/qwen3-8-max)、[百炼 OpenAI 兼容 Chat](https://help.aliyun.com/zh/model-studio/qwen-api-via-openai-chat-completions)。
+
+## v4 正常启动与升级
+
+所有入口均调用 `backend.app:create_app`。演示快照在 `backend/data/demo-account.json`，默认正常启动执行一次，账号记录不会共享给其他用户。旧演示目录 `.demo-data/` 在无正常数据库、未配置 DATABASE_URL 时复制到 `.data/`，使用 SQLite backup API 保留已提交 WAL 数据，源文件不删除；已有 `.data/` 优先。
+
+本次交付修订为 4.0.0+deploy.2，原工程定版归档和标签保持原样。首次安装与更新均按仓库根目录 README 执行。

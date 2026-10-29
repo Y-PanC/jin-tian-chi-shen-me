@@ -21,6 +21,7 @@ class Settings:
     vision_daily_limit: int = 50
     session_days: int = 14
     media_quota_bytes: int = 250 * 1024 * 1024
+    seed_demo_account: bool = True
 
     @property
     def vision_enabled(self):
@@ -28,9 +29,12 @@ class Settings:
 
     @classmethod
     def from_env(cls):
-        load_dotenv(ROOT / ".env")
+        env = ROOT / ".env"
+        load_dotenv(env if env.exists() else ROOT.parent.parent / ".env.demo")
         data = ROOT / ".data"
         data.mkdir(mode=0o700, exist_ok=True)
+        if not os.getenv("DATABASE_URL", "").strip():
+            adopt_previous_data(data)
         return cls(
             database_url=os.getenv("DATABASE_URL", "").strip() or f"sqlite:///{data / 'meals.sqlite3'}",
             media_root=Path(os.getenv("MEDIA_ROOT", "").strip() or data / "photos"),
@@ -42,4 +46,26 @@ class Settings:
             vision_enable_thinking=os.getenv("VISION_ENABLE_THINKING", "false").lower() == "true",
             vision_timeout=float(os.getenv("VISION_TIMEOUT_SECONDS", "30")),
             vision_daily_limit=int(os.getenv("VISION_DAILY_LIMIT", "50")),
+            seed_demo_account=os.getenv("SEED_DEMO_ACCOUNT", "true").lower() == "true",
         )
+
+
+def adopt_previous_data(target):
+    """Preserve the previous delivery's SQLite snapshot and uploads on upgrade."""
+    import shutil
+    import sqlite3
+
+    previous = ROOT.parent.parent / ".demo-data"
+    source = previous / "meals.sqlite3"
+    destination = target / "meals.sqlite3"
+    if destination.exists() or not source.is_file():
+        return
+    # Preserve the source and use SQLite's backup API to include committed WAL.
+    if (previous / "photos").is_dir():
+        shutil.copytree(previous / "photos", target / "photos", dirs_exist_ok=True)
+    temporary = target / "meals.sqlite3.importing"
+    with sqlite3.connect(f"file:{source}?mode=ro", uri=True) as old:
+        with sqlite3.connect(temporary) as fresh:
+            old.backup(fresh)
+    temporary.chmod(0o600)
+    temporary.replace(destination)

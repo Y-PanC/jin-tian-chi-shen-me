@@ -25,6 +25,13 @@ class LoginSession(Base):
     expires_at: Mapped[float] = mapped_column(Float, index=True)
 
 
+class DemoInitialization(Base):
+    __tablename__ = "demo_initializations"
+    dataset_id: Mapped[str] = mapped_column(String(100), primary_key=True)
+    user_id: Mapped[str] = mapped_column(ForeignKey("users.id", ondelete="CASCADE"))
+    completed_at: Mapped[float] = mapped_column(Float)
+
+
 class Meal(Base):
     __tablename__ = "meals"
     id: Mapped[str] = mapped_column(String(36), primary_key=True)

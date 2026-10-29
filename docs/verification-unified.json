@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-29",
+  "deliveryVersion": "4.0.0+deploy.2",
+  "normalEntry": "backend.run / backend.app:create_app",
+  "defaultPort": 5177,
+  "firstStartLogin": "passed",
+  "processRestartMeals": 33,
+  "dayCount": 16,
+  "dishTypes": 28,
+  "backendTests": 41,
+  "initializationTests": 13,
+  "composeConfigurations": [
+    "root SQLite",
+    "application SQLite",
+    "PostgreSQL"
+  ],
+  "dockerRuntime": "not tested; daemon unavailable",
+  "frontend": "unchanged; not rerun",
+  "previousDeliveryDatabaseUpgrade": "passed; original .demo-data retained"
+}

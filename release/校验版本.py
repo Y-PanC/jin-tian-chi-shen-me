@@ -26,4 +26,4 @@ if errors:
     print('校验未通过：')
     print('\n'.join(errors))
     sys.exit(1)
-print(f"v{manifest['version']} 校验通过：{len(expected)} 个文件完整，内容与固定资产清单一致")
+print(f"v{manifest.get('deliveryVersion', manifest['version'])} 校验通过：{len(expected)} 个文件完整，内容与交付清单一致")

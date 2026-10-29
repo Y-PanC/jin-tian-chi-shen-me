@@ -6,11 +6,12 @@ from fastapi.testclient import TestClient
 import pytest
 from sqlalchemy import func, select
 
-from demo.app import create_demo_app
-from demo.bootstrap import ACCOUNT_FILE, seed_account
+from backend.app import create_app
+from backend.demo_seed import ACCOUNT_FILE, seed_account
 from backend.config import Settings
 from backend.domain import profile_data, statistics
-from backend.models import Meal, User
+from backend.models import DemoInitialization, Meal, User
+from backend.security import hash_password
 
 DATA = json.loads(ACCOUNT_FILE.read_text(encoding="utf-8"))
 HEADERS = {"X-Meal-Request": "1"}
@@ -19,7 +20,7 @@ HEADERS = {"X-Meal-Request": "1"}
 @pytest.fixture
 def app(tmp_path):
     config = Settings(database_url=f"sqlite:///{tmp_path / 'demo.db'}", media_root=tmp_path / "photos")
-    return create_demo_app(config, run_worker=False)
+    return create_app(config, run_worker=False)
 
 
 def login(client):
@@ -131,3 +132,107 @@ def test_public_payload_has_no_local_ids_sessions_or_provider_keys():
     for item in DATA["meals"]:
         assert "id" not in item["record"]
         assert item["record"]["photos"] == []
+
+
+def test_deleting_all_meals_does_not_restore_the_snapshot_on_restart(app):
+    with TestClient(app, headers=HEADERS):
+        with app.state.db() as db:
+            for row in db.scalars(select(Meal)):
+                db.delete(row)
+            db.commit()
+    with TestClient(app, headers=HEADERS) as client:
+        login(client)
+        assert client.get("/api/v1/state").json()["records"] == []
+        with app.state.db() as db:
+            assert db.scalar(select(func.count()).select_from(DemoInitialization)) == 1
+
+
+def test_upgrade_adds_yunzhong_without_changing_the_existing_xxx_account(app):
+    app.state.config.seed_demo_account = False
+    with TestClient(app, headers=HEADERS) as client:
+        client.post("/api/v1/auth/register", json={"username": "xxx", "password": "ExistingPass123"})
+        original = client.get("/api/v1/state").json()["user"]
+    app.state.config.seed_demo_account = True
+    with TestClient(app, headers=HEADERS) as client:
+        login(client)
+        assert len(client.get("/api/v1/state").json()["records"]) == 33
+        client.post("/api/v1/auth/login", json={"username": "xxx", "password": "ExistingPass123"})
+        state = client.get("/api/v1/state").json()
+        assert state["user"] == original and state["records"] == []
+
+
+def test_existing_empty_yunzhong_receives_history_without_password_reset(app):
+    app.state.config.seed_demo_account = False
+    with TestClient(app, headers=HEADERS) as client:
+        client.post("/api/v1/auth/register", json={"username": "Yunzhong", "password": "ExistingPass123"})
+        with app.state.db() as db:
+            user = db.scalar(select(User))
+            password_hash = user.password_hash
+            user.settings = {**user.settings, "nickname": "原昵称"}
+            db.commit()
+    app.state.config.seed_demo_account = True
+    with TestClient(app, headers=HEADERS) as client:
+        assert client.post("/api/v1/auth/login", json={"username": "Yunzhong", "password": "ExistingPass123"}).status_code == 200
+        state = client.get("/api/v1/state").json()
+        assert len(state["records"]) == 33 and state["profile"]["onboardingCompleted"]
+        assert state["settings"]["nickname"] == "原昵称"
+        with app.state.db() as db:
+            assert db.scalar(select(User)).password_hash == password_hash
+
+
+def test_upgrade_keeps_previously_deleted_demo_history_empty(app):
+    from uuid import NAMESPACE_URL, uuid5
+    import time
+    app.state.config.seed_demo_account = False
+    with TestClient(app, headers=HEADERS):
+        with app.state.db() as db:
+            db.add(User(id=str(uuid5(NAMESPACE_URL, f"{DATA['datasetId']}/user")), username="yunzhong",
+                        password_hash=hash_password(DATA["password"]), profile=profile_data(DATA["profile"]),
+                        settings=DATA["settings"], knowledge_history={}, created_at=time.time()))
+            db.commit()
+    app.state.config.seed_demo_account = True
+    with TestClient(app, headers=HEADERS) as client:
+        login(client)
+        assert client.get("/api/v1/state").json()["records"] == []
+
+
+def test_default_factory_initializes_without_a_special_entrypoint(tmp_path, monkeypatch):
+    import backend.config as config_module
+    root = tmp_path / "release" / "mobile-web"
+    root.mkdir(parents=True)
+    monkeypatch.setattr(config_module, "ROOT", root)
+    for key in ("DATABASE_URL", "MEDIA_ROOT", "SEED_DEMO_ACCOUNT", "OPENAI_BASE_URL", "OPENAI_API_KEY", "DASHSCOPE_API_KEY", "VISION_MODEL"):
+        monkeypatch.delenv(key, raising=False)
+    normal = create_app(run_worker=False)
+    with TestClient(normal, headers=HEADERS, base_url="http://127.0.0.1") as client:
+        login(client)
+        assert len(client.get("/api/v1/state").json()["records"]) == 33
+
+
+def test_adopt_previous_data_preserves_committed_wal_and_photos(tmp_path, monkeypatch):
+    import sqlite3
+    import backend.config as config_module
+    root = tmp_path / "release" / "mobile-web"
+    root.mkdir(parents=True)
+    previous = tmp_path / ".demo-data"
+    (previous / "photos").mkdir(parents=True)
+    (previous / "photos" / "saved.jpg").write_bytes(b"existing-photo")
+    old = sqlite3.connect(previous / "meals.sqlite3")
+    old.execute("PRAGMA journal_mode=WAL")
+    old.execute("CREATE TABLE retained (value TEXT)")
+    old.execute("INSERT INTO retained VALUES ('existing-record')")
+    old.commit()
+    monkeypatch.setattr(config_module, "ROOT", root)
+    target = root / ".data"
+    target.mkdir()
+    config_module.adopt_previous_data(target)
+    with sqlite3.connect(target / "meals.sqlite3") as fresh:
+        assert fresh.execute("SELECT value FROM retained").fetchone()[0] == "existing-record"
+        fresh.execute("UPDATE retained SET value='newer-record'")
+        fresh.commit()
+    config_module.adopt_previous_data(target)
+    with sqlite3.connect(target / "meals.sqlite3") as fresh:
+        assert fresh.execute("SELECT value FROM retained").fetchone()[0] == "newer-record"
+    assert (target / "photos" / "saved.jpg").read_bytes() == b"existing-photo"
+    assert old.execute("SELECT value FROM retained").fetchone()[0] == "existing-record"
+    old.close()

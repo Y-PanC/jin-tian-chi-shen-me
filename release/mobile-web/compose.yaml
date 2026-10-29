@@ -1,33 +1,14 @@
 services:
-  db:
-    image: postgres:17
-    environment:
-      POSTGRES_DB: meals
-      POSTGRES_USER: meals
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}
-    volumes:
-      - database:/var/lib/postgresql/data
-    healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U meals -d meals"]
-      interval: 5s
-      timeout: 5s
-      retries: 10
-    restart: unless-stopped
   web:
     build: .
     env_file: .env
     environment:
-      DATABASE_URL: postgresql+psycopg://meals:${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}@db:5432/meals
+      DATABASE_URL: sqlite:////data/meals.sqlite3
       MEDIA_ROOT: /data/photos
-      COOKIE_SECURE: "true"
     ports:
-      - "127.0.0.1:8000:8000"
+      - "127.0.0.1:5177:8000"
     volumes:
-      - photos:/data/photos
-    depends_on:
-      db:
-        condition: service_healthy
+      - data:/data
     restart: unless-stopped
 volumes:
-  database:
-  photos:
+  data:

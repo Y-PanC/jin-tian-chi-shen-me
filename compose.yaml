@@ -1,14 +1,12 @@
 services:
   web:
-    build:
-      context: .
-      dockerfile: Dockerfile.demo
-    env_file: .env.demo
+    build: .
+    env_file: release/mobile-web/.env
     environment:
       DATABASE_URL: sqlite:////data/meals.sqlite3
       MEDIA_ROOT: /data/photos
     ports:
-      - "${DEMO_BIND:-127.0.0.1}:${DEMO_PORT:-5177}:8000"
+      - "127.0.0.1:5177:8000"
     volumes:
       - demo-data:/data
     restart: unless-stopped
